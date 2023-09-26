@@ -39,8 +39,8 @@ const Footer = () => {
                 </div>
                 <div className='flex flex-col gap-5'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Staff</h3>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-thin hover:underline'>Teaching</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-thin hover:underline '>Non-Teaching</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>Teaching</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline '>Non-Teaching</Link>
                     
                 </div>
             </div>
@@ -50,11 +50,11 @@ const Footer = () => {
 
             <div className='flex flex-col gap-5'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Who We Are</h3>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-thin hover:underline'>About Us</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-thin hover:underline'>What We Offer</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-thin hover:underline'>Levels</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-thin hover:underline'>Facilities</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-thin hover:underline'>Our Culture</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>About Us</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>What We Offer</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>Levels</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>Facilities</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>Our Culture</Link>
                     
                 </div>
             <div className='flex flex-col gap-5'>
