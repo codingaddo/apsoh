@@ -16,7 +16,7 @@ export default function Home() {
       <Levels/>
       </div>
       <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-28 space-y-5 md:space-y-16'>
-      <h2 className='text-center text-xl md:text-4xl font-extrabold'><span className='text-[#069251d3]'>APSOH AT </span> <span className='text-[#043129f0]'>A GLANCE</span></h2>
+      <h2 className='text-center text-[2em] md:text-4xl font-extrabold'><span className='text-[#069251d3]'>APSOH AT </span> <span className='text-[#043129f0]'>A GLANCE</span></h2>
         <div className='flex flex-col md:grid md:grid-cols-3 gap-x-0 gap-y-0'>
         <Statistic icon={<FaUserGraduate/>} number={'50K+'} name={'Student'} className={'bg-[#9ed4cb57] p-7'} />
         <Statistic icon={<BsFillPeopleFill/>} number={'240+'} name={'Staff'} className={'bg-[#f5ebc070] p-7'}  />
