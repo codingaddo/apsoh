@@ -2,6 +2,8 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import useScroll from './hooks/scroll'
+import { FaAngleDown } from 'react-icons/fa'
+
 
 
 const Navbar = () => {
@@ -15,15 +17,15 @@ const Navbar = () => {
     },[])
 
   return (
-    <div className={!fixed?'flex justify-around items-center bg-[#ffffff] shadow-xl py-7 w-full':'fixed top-0 flex justify-around items-center bg-[#ffffff] shadow-xl py-7 w-full'}>
+    <div className={!fixed?'flex relative justify-around items-center bg-[#ffffff] shadow-xl py-7 w-full':'fixed top-0 flex justify-around items-center bg-[#ffffff] shadow-xl py-7 w-full'}>
         <h1>Logo</h1>
         <ul className='flex justify-between gap-10 font-bold'>
-        <Link href={'/'}>HOME</Link>
-        <Link href={'/about'}>ABOUT APSOH</Link>
-        <Link href={'/'}>ACADEMICS</Link>
-        <Link href={'/'}>ADMISSIONS</Link>
-        <Link href={'/'}>EVENTS</Link>
-        <Link href={'/'}>CONTACT</Link>
+        <Link href={'/'} className='flex items-center'>HOME</Link>
+        <Link href={'/about'} className='flex items-center'>ABOUT APSOH<FaAngleDown/> </Link>
+        <Link href={'/'} className='flex items-center'>ACADEMICS <FaAngleDown/> </Link>
+        <Link href={'/'} className='flex items-center'>ADMISSIONS<FaAngleDown/> </Link>
+        <Link href={'/'} className='flex items-center'>EVENTS<FaAngleDown/> </Link>
+        <Link href={'/'} className='flex items-center'>CONTACT <FaAngleDown/> </Link>
 
         </ul>
     </div>
