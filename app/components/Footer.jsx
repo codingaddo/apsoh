@@ -34,13 +34,13 @@ const Footer = () => {
             <div className='flex flex-col gap-4'>
                 <div className='flex flex-col gap-5'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Academics</h3>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>Fees</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>Subjects</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>Fees</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>Subjects</Link>
                 </div>
                 <div className='flex flex-col gap-5'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Staff</h3>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>Teaching</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline '>Non-Teaching</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>Teaching</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline '>Non-Teaching</Link>
                     
                 </div>
             </div>
@@ -50,20 +50,20 @@ const Footer = () => {
 
             <div className='flex flex-col gap-5'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Who We Are</h3>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>About Us</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>What We Offer</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>Levels</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>Facilities</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm font-thin hover:underline'>Our Culture</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>About Us</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>What We Offer</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>Levels</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>Facilities</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm font-thin hover:underline'>Our Culture</Link>
                     
                 </div>
             <div className='flex flex-col gap-5'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Contacts</h3>
-                    <Link href={''} className='text-[#dfe0de] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaLocationArrow/> </button>Post Office Box 28, Samsam Accra,Ghana</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Propritor Office +233 551 817 972</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Principal Office +233 551 8172 972</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Head Master/Mistress Office +233 551 817 972</Link>
-                    <Link href={''} className='text-[#dfe0de] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaMailBulk/> </button> info@apsoh.edu.gh</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaLocationArrow/> </button>Post Office Box 28, Samsam Accra,Ghana</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Propritor Office +233 551 817 972</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Principal Office +233 551 8172 972</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Head Master/Mistress Office +233 551 817 972</Link>
+                    <Link href={''} className='text-[#f1f1f1] text-sm flex gap-2 font-thin hover:underline'><button className='text-[#6BF178] text-sm'><FaMailBulk/> </button> info@apsoh.edu.gh</Link>
                     
                 </div>
         
