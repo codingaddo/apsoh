@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,8 +14,45 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+
+/* Hamburger */
+.hamburger{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s;
+}
+.top,.middle,.bottom{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 4px;
+  transition: all 0.75s;
+  transform: rotate(0);
 }
 
-body {
-  
+.middle {
+  transform: translateY(10px);
+}
+
+.bottom {
+  transform: translateY(20px);
+}
+
+.open{
+  transform: rotate(90deg);
+  transform: translateY(0);
+}
+
+.open .top{
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .bottom{
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.open .middle{
+  display: none;
 }
