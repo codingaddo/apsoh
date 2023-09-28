@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Slider from './components/Slider'
 import Statistic from './components/Statistic'
 import { FaBook,FaUserGraduate,} from 'react-icons/fa'
@@ -11,7 +10,7 @@ export default function Home() {
   return (
     <main className="px-1 flex flex-col gap-16  py-12 md:px-10 bg-[#f6fdf9]">
       <Slider/>
-      <div className='p-16 rounded-3xl bg-[#f9f3d670]'>
+      <div className='p-10 rounded-3xl bg-[#f9f3d670]'>
 
       <Levels/>
       </div>

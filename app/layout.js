@@ -11,7 +11,7 @@ export const metadata = {
   description: 'A school website',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children}) {
   return (
     <html lang="en">
       <body className={inter.className}>

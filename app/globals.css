@@ -20,8 +20,8 @@
 /* Hamburger */
 .hamburger{
   position: relative;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   transition: all 0.3s;
 }
 .top,.middle,.bottom{
