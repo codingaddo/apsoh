@@ -3,12 +3,14 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import useScroll from './hooks/scroll'
 import { FaAngleDown } from 'react-icons/fa'
+import Container from './Container'
 
 
 
 const Navbar = () => {
     const [fixed,setFixed] = useState(false)
     const [nav,setNav]=useState(false)
+    const [show, setShow] = useState(false)
 
     const handleNav =()=>{
         setNav(!nav)
@@ -33,12 +35,22 @@ const Navbar = () => {
             HOME
             {/* <span className={`h-[2px] inline-block bg-[#091107db] absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}></span> */}
         </Link>
-        <Link href={'/about'} className='flex items-center'>ABOUT APSOH<FaAngleDown/> </Link>
+        <Link href={'/about'} onMouseEnter={()=>setShow(!show)} onMouseLeave={()=>setShow(prev=>!prev)} className='flex items-center'>ABOUT APSOH<FaAngleDown/> </Link>
         <Link href={'/academics'} className='flex items-center'>ACADEMICS <FaAngleDown/> </Link>
         <Link href={'/admissions'} className='flex items-center'>ADMISSIONS<FaAngleDown/> </Link>
         <Link href={'/events'} className='flex items-center'>EVENTS<FaAngleDown/> </Link>
         <Link href={'/contact'} className='flex items-center'>CONTACT <FaAngleDown/> </Link>
         </ul>
+
+            { show &&
+
+        <div className='absolute top-24 left-[50vw] bg-slate-50 p-10'>
+
+        <Container>
+
+        </Container>
+        </div>
+            }
 
         {/* Responsive Navbar */}
        

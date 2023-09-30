@@ -29,7 +29,10 @@ export default function Home() {
       </div>
 
       <Slider/>
+       <div className='bg-[#f9f3d670] p-10 rounded-3xl'>
+
       <Testimonials/>
+       </div>
       
     </main>
   )
