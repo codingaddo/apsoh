@@ -1,3 +1,4 @@
+'use client'
 import Slider from './components/Slider'
 import Statistic from './components/Statistic'
 import { FaBook,FaUserGraduate,} from 'react-icons/fa'
@@ -5,10 +6,11 @@ import {BsFillPeopleFill,BsBookHalf} from 'react-icons/bs'
 import {ImLibrary} from 'react-icons/im'
 import {BiChild} from 'react-icons/bi'
 import Levels from './components/Levels'
+import Testimonials from './components/Testimonials'
 
 export default function Home() {
   return (
-    <main className="px-1 flex flex-col gap-16  py-12 md:px-10 bg-[#f6fdf9]">
+    <main className="px-1 flex flex-col gap-16  py-12 md:px-10 bg-[#f8f8f6]">
       <Slider/>
       <div className='p-10 rounded-3xl bg-[#f9f3d670]'>
 
@@ -27,6 +29,7 @@ export default function Home() {
       </div>
 
       <Slider/>
+      <Testimonials/>
       
     </main>
   )
