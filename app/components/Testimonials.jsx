@@ -10,7 +10,7 @@ const Testimonials = ({title,text,imgageUrl,name,stage}) => {
             <h2 className='font-bold text-2xl'>What our Students and Parents are Saying </h2>
             <p className='text-start text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus officiis vitae. Repudiandae sit nemo enim distinctio atque nihil natus asperiores, ipsa, voluptatem vitae quasi hic quis? Non, voluptatibus quia.
             </p>
-            <div className='flex items-center justify-around px-40'>
+            <div className='flex flex-col md:flex-row items-center justify-around px-40'>
                 <div className=''>
                     <Image
                         src={pic}
