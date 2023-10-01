@@ -2,34 +2,37 @@
 import React from 'react'
 import Image from 'next/image'
 import pic from '../../public/assets/mike.jpeg'
+import { FaGreaterThan,FaLessThan } from 'react-icons/fa'
 
 const Testimonials = ({title,text,imgageUrl,name,stage}) => {
   return (
    
-        <div className='bg-[#ffffffb9] rounded-2xl p-10 py-12 flex flex-col text-center gap-7'>
+        <div className='bg-[#ffffffb9] rounded-2xl sm:p-5 sm:py-16 md:p-24  flex flex-col text-center gap-4'>
             <h2 className='font-bold text-2xl'>What our Students and Parents are Saying </h2>
-            <p className='text-center md:text-start text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus officiis vitae. Repudiandae sit nemo enim distinctio atque nihil natus asperiores, ipsa, voluptatem vitae quasi hic quis? Non, voluptatibus quia.
+            <p className='text-center md:text-start text-xl px-5 md:px-16'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus officiis vitae. Repudiandae sit nemo enim distinctio atque nihil natus asperiores, ipsa, voluptatem vitae quasi hic quis? Non, voluptatibus quia.
             </p>
                 <div className='flex flex-col md:flex-row items-center justify-center gap-10 md:gap-32 md:px-20 '>
                     <Image
                         src={pic}
                         alt='picture'
                         placeholder='blur'
-                        // width={100}
-                        // height={100}
+                        // width={120}
+                        // height={120}
                         style={{
-                            width:'180px',
-                            height:'180px',
+                            width:'150px',
+                            height:'150px',
                             borderRadius:'50%',
-
+                            padding:'10px'
                         }}
                     />
-                <div className='font-bold text-xl text-start '>
+                <div className='font-bold text-xl flex flex-col gap-4 text-start '>
                     <h3>Addo Michael</h3>
                     <h3 className='font-md text-sm'>Final year student</h3>
 
                 </div>
                 </div>
+
+               
             
         </div>
   )

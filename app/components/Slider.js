@@ -1,13 +1,21 @@
 'use client'
 import React from 'react'
-import {Carousel} from 'react-responsive-carousel'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import pic from '../../public/assets/mike.jpeg'
 
-const Slider = () => {
+
+const Slider = ({children}) => {
+  const items = [
+    {
+      text:"hello i am lnfggngu jjgu nugju",
+      img:pic,
+      name:"Addo Michael"
+    }
+  ]
   return (
-    <Carousel>
-      
-    </Carousel>
+    <>
+      {children}
+  
+    </>
   )
 }
 

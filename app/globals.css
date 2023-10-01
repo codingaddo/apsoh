@@ -56,3 +56,10 @@
 .open .middle{
   display: none;
 }
+
+
+
+/* Centering the arrows and changing their color */
+.carousel-root {
+  position: relative;
+}

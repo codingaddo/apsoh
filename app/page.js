@@ -7,6 +7,7 @@ import {ImLibrary} from 'react-icons/im'
 import {BiChild} from 'react-icons/bi'
 import Levels from './components/Levels'
 import Testimonials from './components/Testimonials'
+import Container from './components/Container'
 
 export default function Home() {
   return (
@@ -28,10 +29,9 @@ export default function Home() {
         </div>
       </div>
 
-      <Slider/>
+      
        <div className='bg-[#f9f3d670] p-10 rounded-3xl'>
-
-      <Testimonials/>
+        <Container/>
        </div>
       
     </main>
