@@ -26,7 +26,7 @@ const Testimonials = ({title,text,imgageUrl,name,stage}) => {
                         }}
                     />
                 <div className='font-bold text-xl flex flex-col gap-4 text-start '>
-                    <h3>Addo Michael</h3>
+                    <h3>{name}</h3>
                     <h3 className='font-md text-sm'>Final year student</h3>
 
                 </div>

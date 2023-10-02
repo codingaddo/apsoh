@@ -8,11 +8,15 @@ import {BiChild} from 'react-icons/bi'
 import Levels from './components/Levels'
 import Testimonials from './components/Testimonials'
 import Container from './components/Container'
+import pic1 from '../public/assets/a.png'
+import pic2 from '../public/assets/b.png'
+import pic3 from '../public/assets/c.png'
+export const data = [pic1,pic2,pic3]
 
 export default function Home() {
   return (
     <main className="px-1 flex flex-col gap-16  py-12 md:px-10 bg-[#f8f8f6]">
-      <Slider/>
+      <Slider items={data}/>
       <div className='p-10 rounded-3xl bg-[#f9f3d670]'>
 
       <Levels/>

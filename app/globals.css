@@ -59,7 +59,52 @@
 
 
 
-/* Centering the arrows and changing their color */
-.carousel-root {
+.slider{
   position: relative;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowR{
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  color: #66b539;
+  font-size:3em;
+  user-select:none;
+  z-index: 10;
+  cursor: pointer;
+}
+.arrowL{
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  color: #66b539;
+  font-size:3em;
+  user-select:none;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.slide{
+  opacity: 0;
+  transition-duration: 5s ease;
+}
+.slide.active{
+  position: relative;
+  opacity: 1;
+  transition-duration: 5s ease;
+  transform: scale(1.1);
+}
+
+@keyframes animate {
+  from {
+    left: 0%;
+  }
+  to{
+    right: 100%;
+  }
+  
 }
