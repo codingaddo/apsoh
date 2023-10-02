@@ -7,11 +7,11 @@ import { FaGreaterThan,FaLessThan } from 'react-icons/fa'
 const Testimonials = ({title,text,imgageUrl,name,stage}) => {
   return (
    
-        <div className='bg-[#ffffffb9] rounded-2xl sm:p-5 sm:py-28 py-20 items-center md:p-24  flex flex-col text-center gap-4'>
+        <div className='bg-[#ffffffb9] rounded-2xl sm:p-5 sm:py-10 py-20 items-center md:p-24  flex flex-col text-center gap-4'>
             <h2 className='font-bold text-2xl'>What our Students and Parents are Saying </h2>
             <p className='text-justify md:text-start text-xl  px-2 md:px-16'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusamus officiis vitae. Repudiandae sit nemo enim distinctio atque nihil natus asperiores, ipsa, voluptatem vitae quasi hic quis? Non, voluptatibus quia.
             </p>
-                <div className='flex flex-col md:flex-row items-center justify-center gap-5 md:gap-32 md:px-20 '>
+                <div className='flex  md:flex-row items-center justify-center gap-5 md:gap-32 md:px-20 '>
                     <Image
                         src={pic}
                         alt='picture'
