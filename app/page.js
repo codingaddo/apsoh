@@ -7,17 +7,50 @@ import {ImLibrary} from 'react-icons/im'
 import {BiChild} from 'react-icons/bi'
 import Levels from './components/Levels'
 import Testimonials from './components/Testimonials'
-import Container from './components/Container'
+import MyCarousel from './components/Carousel'
 import pic1 from '../public/assets/a.png'
 import pic2 from '../public/assets/b.png'
 import pic3 from '../public/assets/c.png'
+import Image from 'next/image'
 export const data = [pic1,pic2,pic3]
 
 export default function Home() {
   return (
-    <main className="px-1 flex flex-col gap-16  py-12 md:px-10 bg-[#f8f8f6]">
-      <Slider items={data}/>
-      <div className='p-10 rounded-3xl bg-[#f9f3d670]'>
+    <main className="px-1 flex flex-col gap-14   py-12 md:px-10 bg-[#f8f8f6]">
+      <div className ='text-center md:text-star uppercase text-lime-600'>
+      <h1 className='sm:text-center text-4xl font-bold'>Welcome To African Preparatory School Hope</h1>
+      <h2 className='sm:text-center text-2xl font-bold'>Shaping your wards future for the best</h2>
+
+      </div>
+      {/* <Slider items={data}/> */}
+      <MyCarousel>
+         {
+        data.map((item,index)=>{
+          return(
+              
+            <div key={index} className='slider p-3'>
+              {
+                
+                 <Image
+              src={item}
+              alt='news'
+              style={{
+                width:'100vw',
+                height:'60vh',
+                borderRadius:'2vw'
+  
+              }}
+              />
+              }
+
+             
+            </div>
+          )
+        })
+      }
+      </MyCarousel>
+
+      <div className='md:p-10 p-5 rounded-3xl bg-[#f9f3d670]'>
 
       <Levels/>
       </div>
@@ -34,8 +67,12 @@ export default function Home() {
       </div>
 
       
-       <div className='bg-[#f9f3d670] p-10 rounded-3xl'>
-        <Container/>
+       <div className='bg-[#f9f3d670] md:p-10 p-5 rounded-3xl'>
+        <MyCarousel>
+          <Testimonials name={'Addo'}/>
+        <Testimonials name={'Mike'}/>
+        <Testimonials name={'Jonas'}/>
+        </MyCarousel>
        </div>
       
     </main>

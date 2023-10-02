@@ -3,7 +3,7 @@ import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import useScroll from './hooks/scroll'
 import { FaAngleDown } from 'react-icons/fa'
-import Container from './Container'
+import Container from './Carousel'
 
 
 
