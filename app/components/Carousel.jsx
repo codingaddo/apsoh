@@ -19,17 +19,17 @@ const MyCarousel = ({children}) => {
        <>
 
 <Carousel 
-autoplay={3000} 
+autoplay={5000} 
 wrapAround 
 dragging={true} 
-pauseOnHover={false}
+pauseOnHover={true}
 enableKeyboardControls={true}
 renderBottomCenterControls={{}}
   renderCenterLeftControls={({ previousSlide }) => (
-    <button className='arrowL' onClick={previousSlide}>{size>878&& <FaArrowAltCircleLeft/>}</button>
+    <button className='arrowL' onClick={previousSlide}>{size>600 && <FaArrowAltCircleLeft className='hover:text-green-400'/>}</button>
   )}
   renderCenterRightControls={({ nextSlide }) => (
-    <button className='arrowR' onClick={nextSlide}>{size>878&& <FaArrowAltCircleRight/>}</button>
+    <button className='arrowR' onClick={nextSlide}>{size>600 && <FaArrowAltCircleRight className='hover:text-green-400'/>}</button>
   )}
   className='cursor-pointer'
  >

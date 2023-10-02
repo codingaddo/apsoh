@@ -52,6 +52,7 @@ html{
 .slider{
   position: relative;
   /* height: 60vh; */
+  /* width: 950px; */
   display: flex;
   justify-content: center;
   align-items: center;

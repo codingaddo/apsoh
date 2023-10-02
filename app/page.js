@@ -28,15 +28,15 @@ export default function Home() {
         data.map((item,index)=>{
           return(
               
-            <div key={index} className='slider p-3'>
+            <div key={index} className='slider p-3 md:px-10 '>
               {
                 
                  <Image
               src={item}
               alt='news'
               style={{
-                width:'100vw',
-                height:'60vh',
+                width:'1000px',
+                height:'420px',
                 borderRadius:'2vw'
   
               }}
