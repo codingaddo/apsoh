@@ -32,7 +32,7 @@ const Navbar = () => {
     }, [])
 
   return (
-    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-xl py-7 px-10 w-full':'fixed top-0 flex justify-between  bg-[#ffffff] shadow-xl py-7 z-40 px-10 w-full'}>
+    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-xl py-4 px-7 w-full':'fixed top-0 flex justify-between  bg-[#ffffff] shadow-xl py-4 z-40 px-7 w-full'}>
         <h1>Logo</h1>
         <ul className='hidden md:flex  justify-between gap-2  font-bold'>
         <Link href={'/'} className={`text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4`}>
@@ -61,13 +61,13 @@ const Navbar = () => {
         {/* Responsive Navbar */}
        
         
-         <ul className={nav?'flex flex-col w-full h-100vh absolute top-[83px] shadow-xl left-0 z-20 py-20 pt-24 px-44 pl-10 overflow-x-hidden  overflow-auto transition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-9 font-bold md:hidden':'flex flex-col absolute h-100 top-[83px] shadow-xl -left-96 z-20 py-20 pt-24 px-44 pl-10  ransition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-9 font-bold md:hidden'}>
+         <ul className={nav?'flex flex-col w-full h-100vh absolute top-[70px] shadow-xl left-0 z-20 py-16 pt-14 px-44 pl-10 overflow-x-hidden  overflow-auto transition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-5 font-bold md:hidden':'flex flex-col absolute h-100vh top-[70px] shadow-xl -left-96 z-20 py-16 pt-14 px-44 pl-10  ransition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-10 font-bold md:hidden'}>
         <Link href={'/'} className='flex items-center' onClick={()=>setNav(false)}>HOME</Link>
-        <Link href={'/about'} className='flex items-center'>ABOUT APSOH<FaAngleDown/> </Link>
-        <Link href={'/academics'} className='flex items-center'>ACADEMICS <FaAngleDown/> </Link>
-        <Link href={'/admissions'} className='flex items-center'>ADMISSIONS<FaAngleDown/> </Link>
-        <Link href={'/events'} className='flex items-center'>EVENTS<FaAngleDown/> </Link>
-        <Link href={'/contact'} className='flex items-center'>CONTACT <FaAngleDown/> </Link>
+        <Link href={'/about'} className='flex items-center' onClick={()=>setNav(false)}>ABOUT APSOH </Link>
+        <Link href={'/academics'} className='flex items-center' onClick={()=>setNav(false)}>ACADEMICS  </Link>
+        <Link href={'/admissions'} className='flex items-center' onClick={()=>setNav(false)}>ADMISSIONS </Link>
+        <Link href={'/events'} className='flex items-center' onClick={()=>setNav(false)}>EVENTS </Link>
+        <Link href={'/contact'} className='flex items-center' onClick={()=>setNav(false)}>CONTACT  </Link>
         </ul>
 
         <button className={nav?'hamburger open flex flex-col md:hidden z-20 shadow-2xl':'hamburger  flex flex-col md:hidden z-20 shadow-2xl'} onClick={handleNav}>

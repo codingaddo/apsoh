@@ -19,8 +19,8 @@ const Testimonials = ({title,text,imgageUrl,name,stage}) => {
                         // width={120}
                         // height={120}
                         style={{
-                            width:'150px',
-                            height:'150px',
+                            width:'180px',
+                            height:'180px',
                             borderRadius:'50%',
                             padding:'10px'
                         }}

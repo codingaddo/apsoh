@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Home|APSOH',
-  description: 'A school website',
+  description: 'The official school website',
 }
 
 export default function RootLayout({ children}) {
