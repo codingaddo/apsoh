@@ -37,7 +37,8 @@ export default function Home() {
               style={{
                 width:'1000px',
                 height:'420px',
-                borderRadius:'2vw'
+                borderRadius:'2vw',
+                objectFit:'cover'
   
               }}
               />

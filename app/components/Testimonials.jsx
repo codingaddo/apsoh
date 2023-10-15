@@ -19,10 +19,10 @@ const Testimonials = ({title,text,imgageUrl,name,stage}) => {
                         // width={120}
                         // height={120}
                         style={{
-                            width:'180px',
-                            height:'180px',
+                            width:'150px',
+                            height:'150px',
                             borderRadius:'50%',
-                            padding:'10px'
+                            objectFit:'contain'
                         }}
                     />
                 <div className='font-bold text-xl flex flex-col gap-2 md:text-start '>
