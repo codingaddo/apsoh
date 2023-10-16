@@ -32,7 +32,7 @@ const Navbar = () => {
     }, [])
 
   return (
-    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-xl py-4 px-7 w-full ':' fixed top-0 flex justify-between  bg-[#ffffff] shadow-xl py-4 z-40 px-7 w-full'}>
+    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-xl py-4 px-7 w-full ':' fixed  ease-in-out duration-300 top-0 flex justify-between  bg-[#ffffff] shadow-xl py-4 z-40 px-7 w-full'}>
         <h1>Logo</h1>
         <ul className='hidden md:flex  justify-between gap-2  font-bold'>
         <Link href={'/'} className={`text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4`}>

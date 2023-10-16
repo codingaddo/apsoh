@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -113,4 +119,20 @@ html{
     right: 100%;
   }
   
+}
+
+.about-head{
+  border-radius: 90%;
+  transform: rotate(-5deg);
+}
+
+
+
+
+@media screen and (width:976px) {
+  .cards{
+      /* background-color: red; */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 }
