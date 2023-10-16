@@ -21,11 +21,11 @@ export default function Home() {
 
     <>
         <div className='hidden backgroundImg flex-col md:flex-row md:flex justify-around bg-gradient-to-r from-green-200 to-slate-100 px-10 pt-32 pb-16 '>
-        <div className='h-[350px] w-[350px] shadow-2xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#f8f8f6] border-lime-500'>
+        <div className='h-[350px] w-[350px] shadow-xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#f8f8f6] border-lime-500'>
           <h2 className=' text-lime-600 text-4xl font-bold'>APSOH Academy</h2>
           <p className='text-slate-500 text-xl'>Dedicated to improving Care and Education for Children</p>
-          <button className='bg-lime-500 rounded-lg py-2 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl  ease duration-300'>
-            <Link href='/contact'>Contact Us</Link>
+          <button className='bg-lime-500 animate-bounce hover:animate-none rounded-lg py-3 relative left-14 w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl  ease duration-300'>
+            <Link href='/contact'>ENROLL NOW</Link>
           </button>
         </div>
         <Image
@@ -38,12 +38,14 @@ export default function Home() {
       </div>
     <main className="px-1 flex flex-col gap-14   py-10 md:px-10 bg-[#f8f8f6]">
       <div className ='block md:hidden text-center md:text-star uppercase text-lime-600'>
-      <h1 className='sm:text-center text-2xl md:text-4xl font-bold'>Welcome To African Preparatory School Hope</h1>
+      <h1 className='sm:text-center text-2xl md:text-4xl font-bold'>APSOH</h1>
       <h2 className='sm:text-center text-xl md:text-2xl font-bold'>Shaping your wards future for the best</h2>
 
       </div>
-      {/* <Slider items={data}/> */}
-      <MyCarousel>
+
+      <div>
+
+      <MyCarousel slidsToShow={1}>
          {
         data.map((item,index)=>{
           return(
@@ -70,6 +72,8 @@ export default function Home() {
         })
       }
       </MyCarousel>
+      </div>
+
 
      
       <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-28 space-y-5 md:space-y-16'>

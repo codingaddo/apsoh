@@ -6,7 +6,7 @@ import { Fade, Slide, SlideProps } from 'react-slideshow-image'
 import Carousel from "nuka-carousel"
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa'
 
-const MyCarousel = ({children}) => {
+const MyCarousel = ({children,slidsToShow}) => {
 
   
 
@@ -19,6 +19,7 @@ const MyCarousel = ({children}) => {
        <>
 
 <Carousel 
+slidesToShow={slidsToShow}
 autoplay={5000} 
 wrapAround 
 dragging={true} 
@@ -26,10 +27,10 @@ pauseOnHover={true}
 enableKeyboardControls={true}
 renderBottomCenterControls={{}}
   renderCenterLeftControls={({ previousSlide }) => (
-    <button className='arrowL' onClick={previousSlide}>{size>600 && <FaArrowAltCircleLeft className='hover:text-green-400'/>}</button>
+    <button className='arrowL' onClick={previousSlide}>{size>850 && <FaArrowAltCircleLeft className='hover:text-green-400'/>}</button>
   )}
   renderCenterRightControls={({ nextSlide }) => (
-    <button className='arrowR' onClick={nextSlide}>{size>600 && <FaArrowAltCircleRight className='hover:text-green-400'/>}</button>
+    <button className='arrowR' onClick={nextSlide}>{size>850 && <FaArrowAltCircleRight className='hover:text-green-400'/>}</button>
   )}
   className='cursor-pointer'
  >
