@@ -24,7 +24,7 @@ export default function Home() {
         <div className='h-[350px] w-[350px] shadow-2xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#f8f8f6] border-lime-500'>
           <h2 className=' text-lime-600 text-4xl font-bold'>APSOH Academy</h2>
           <p className='text-slate-500 text-xl'>Dedicated to improving Care and Education for Children</p>
-          <button className='bg-lime-500 rounded-lg py-2 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 ease duration-300'>
+          <button className='bg-lime-500 rounded-lg py-2 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl ease duration-300'>
             <Link href='/contact'>Contact Us</Link>
           </button>
         </div>
@@ -74,13 +74,13 @@ export default function Home() {
      
       <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-28 space-y-5 md:space-y-16'>
       <h2 className='text-center text-[2em] md:text-4xl font-extrabold'><span className='text-[#069251d3]'>APSOH AT </span> <span className='text-[#043129f0]'>A GLANCE</span></h2>
-        <div className='flex flex-col md:grid md:grid-cols-3 gap-x-0 gap-y-0'>
+        <div className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0'>
         <Statistic icon={<FaUserGraduate/>} number={'50K+'} name={'Student'} className={'bg-[#9ed4cb57] p-7'} />
-        <Statistic icon={<BsFillPeopleFill/>} number={'240+'} name={'Staff'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}  />
         <Statistic icon={<ImLibrary/>} number={'10'} name={'Facilities'} className={'bg-[#f8e7987d] p-7 cursor-pointer'}  />
         <Statistic icon={<BiChild/>} number={'8'} name={'Creche Programs'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}/>
-        <Statistic icon={<FaBook/>} number={'15+'} name={'Basic Programs'} className={'bg-[#f8e7987d] p-7 cursor-pointer'}  />
+        <Statistic icon={<FaBook/>} number={'15+'} name={'Basic Programs'} className={'bg-[#98f8c77d] p-7 cursor-pointer'}  />
         <Statistic icon={<BsBookHalf/>} number={'18+'} name={'JHS Programs'} className={'bg-[#9ed4cb57] p-7 cursor-pointer'}  />
+        <Statistic icon={<BsFillPeopleFill/>} number={'240+'} name={'Staff'} className={'bg-[#cdd38770] p-7 cursor-pointer'}  />
         </div>
       </div>
        <div className='md:p-10 p-5 rounded-3xl bg-[#f9f3d670]'>

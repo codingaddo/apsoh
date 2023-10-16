@@ -26,7 +26,7 @@ const about = () => {
         </div>
       </div>
 
-      <div className='cards flex flex-col md:flex-row justify-between gap-10 md:gap-16 my-16'>
+      <div className='grid sm:grid-cols-2 gap-10 md:grid-cols-3 my-16 p-5'>
      <Cards text={'Safety First'} icon={<FaFirstAid className='text-lime-600 text-[80px]'/>} para={'Staff is First Aid and CPR Certified'}/>
      <Cards text={'Curriculum'} icon={<GiGraduateCap className='text-lime-600 text-[80px]'/>} para={'At APSOH Academy, we utilize the HighReach Learning® curriculum and the Creative Curriculum to aid in the efficient advancement of our children.'}/>
      <Cards text={'Hours'} icon={<GiAlarmClock className='text-lime-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
