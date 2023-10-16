@@ -24,7 +24,7 @@ export default function Home() {
         <div className='h-[350px] w-[350px] shadow-2xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#f8f8f6] border-lime-500'>
           <h2 className=' text-lime-600 text-4xl font-bold'>APSOH Academy</h2>
           <p className='text-slate-500 text-xl'>Dedicated to improving Care and Education for Children</p>
-          <button className='bg-lime-500 rounded-lg py-2 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl ease duration-300'>
+          <button className='bg-lime-500 rounded-lg py-2 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl  ease duration-300'>
             <Link href='/contact'>Contact Us</Link>
           </button>
         </div>
