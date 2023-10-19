@@ -8,15 +8,15 @@ import Cards from '../components/Cards';
 const about = () => {
   return (
     <div className='p-1 pt-10 sm:pt-10 md:p-10 flex  flex-col items-center'>
-      <div className='about-head bg-lime-600 w-[250px] p-5 mb-7 '>
+      {/* <div className='about-head bg-lime-600 w-[250px] p-5 mb-7 '>
       <h1 className='text-center text-4xl font-extrabold  text-[#f1f1f1]'>ABOUT US</h1>
-      </div>
+      </div> */}
 
-      <div className='flex flex-col md:flex-row items-center justify-between gap-10'>
+      <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-5'>
         <Image
           src={svgs[2]}
           alt=''
-          width={350}
+          width={400}
         />
         <div className='p-5 md:p-10'>
           <h2 className='text-4xl pb-5 font-bold text-slate-600'>Our Vision</h2>
@@ -24,13 +24,6 @@ const about = () => {
             African Preparatory School of Hope Academy is dedicated to improving the care and education of children . We believe that early childhood is a time of exploration and discovery. We know that young children learn by “hands on” experiences. Our staff is highly qualified to enhance each child’s growth and development in a stimulating atmosphere of warmth and understanding. Our ultimate goal is to allow each child to develop as an individual as well as part of a group in a happy, safe, and nurturing environment.
           </p>
         </div>
-      </div>
-
-      <div className='grid sm:grid-cols-2 gap-10 md:grid-cols-3 my-16 p-5'>
-     <Cards text={'Safety First'} icon={<FaFirstAid className='text-lime-600 text-[80px]'/>} para={'Staff is First Aid and CPR Certified'}/>
-     <Cards text={'Curriculum'} icon={<GiGraduateCap className='text-lime-600 text-[80px]'/>} para={'At APSOH Academy, we utilize the HighReach Learning® curriculum and the Creative Curriculum to aid in the efficient advancement of our children.'}/>
-     <Cards text={'Hours'} icon={<GiAlarmClock className='text-lime-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
-
       </div>
 
       <div className='p-5 md:p-10'>
@@ -57,6 +50,14 @@ const about = () => {
         width={340}
       />
       
+      </div>
+
+
+       <div className='grid sm:grid-cols-2 gap-10 md:grid-cols-3 my-16 p-5'>
+     <Cards text={'Safety First'} icon={<FaFirstAid className='text-lime-600 text-[80px]'/>} para={'Staff is First Aid and CPR Certified'}/>
+     <Cards text={'Curriculum'} icon={<GiGraduateCap className='text-lime-600 text-[80px]'/>} para={'At APSOH Academy, we utilize the HighReach Learning® curriculum and the Creative Curriculum to aid in the efficient advancement of our children.'}/>
+     <Cards text={'Hours'} icon={<GiAlarmClock className='text-lime-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
+
       </div>
 
     </div>

@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import useScroll from './hooks/scroll'
-import { FaAngleDown } from 'react-icons/fa'
+import { FaAngleDown,FaAngleUp } from 'react-icons/fa'
 import Container from './Carousel'
 
 
@@ -10,12 +10,16 @@ import Container from './Carousel'
 const Navbar = () => {
     const [fixed,setFixed] = useState(false)
     const [nav,setNav]=useState(false)
+    const [dropDown,setDropDown] = useState(false)
 
-    const toggleDropDown = ()=>{
-        setDropDown(!dropDown)
+  
+    const handleState = ()=>{
+        setNav(false)
+        !nav &&
+        setDropDown(false)
     }
 
-
+   
 
     const handleNav =()=>{
         setNav(!nav)
@@ -39,13 +43,25 @@ const Navbar = () => {
             HOME
             {/* <span className='w-[full] bg-[#c5efbd]'></span> */}
         </Link>
-      
-            <Link href={'/about'} className='text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4 '>ABOUT APSOH</Link>
-        
-        <Link href={'/academics'} className='text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4 '>ACADEMICS</Link>
-        <Link href={'/admissions'} className='text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4 '>ADMISSIONS</Link>
-        <Link href={'/events'} className='text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4 '>EVENTS </Link>
-        <Link href={'/contact'} className='text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4'>CONTACT  </Link>
+
+
+           <div className='cursor-pointer transition ease duration-1000' onMouseEnter={()=>setDropDown(true)} onMouseLeave={()=>setDropDown(false)}>
+            <button className={` flex text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4`}>
+                ABOUT APSOH {!dropDown?<FaAngleDown className='text-2xl'/>:<FaAngleUp className='text-2xl'/>}
+            </button>
+            {
+                dropDown &&
+            <div className='flex flex-col bg-slate-200 items-start justify-center gap-5 p-10 absolute w-72 transition ease duration-1000'>
+                <Link href={'/about'} className='text-center text-sm transition ease duration-300 hover:bg-[#c5efbd]  p-2'>ABOUT</Link>
+                <Link href={'/gallary'} className='text-center text-sm transition ease duration-300 hover:bg-[#c5efbd] p-2' >Gallary</Link>
+            </div>
+            }
+        </div>
+              
+        <Link href={'/academics'} className='text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4 '>ACADEMICS</Link>
+        <Link href={'/admissions'} className='text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4 '>ADMISSIONS</Link>
+         <Link href={'/events'} className='text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4 '>EVENTS </Link>
+        <Link href={'/contact'} className='text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4'>CONTACT  </Link>
         </ul>
 
            
@@ -62,12 +78,23 @@ const Navbar = () => {
        
         
          <ul className={nav?'flex flex-col w-full h-100vh absolute top-[70px] shadow-xl left-0 z-20 py-16 pt-14 px-44 pl-10 overflow-x-hidden  overflow-auto transition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-5 font-bold md:hidden':'flex flex-col absolute h-100vh top-[70px] shadow-xl -left-96 z-20 py-16 pt-14 px-44 pl-10  ransition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-10 font-bold md:hidden'}>
-        <Link href={'/'} className='flex items-center' onClick={()=>setNav(false)}>HOME</Link>
-        <Link href={'/about'} className='flex items-center' onClick={()=>setNav(false)}>ABOUT APSOH </Link>
-        <Link href={'/academics'} className='flex items-center' onClick={()=>setNav(false)}>ACADEMICS  </Link>
-        <Link href={'/admissions'} className='flex items-center' onClick={()=>setNav(false)}>ADMISSIONS </Link>
-        <Link href={'/events'} className='flex items-center' onClick={()=>setNav(false)}>EVENTS </Link>
-        <Link href={'/contact'} className='flex items-center' onClick={()=>setNav(false)}>CONTACT  </Link>
+        <Link href={'/'} className='flex items-center' onClick={handleState}>HOME</Link>
+        <div className='cursor-pointer transition ease duration-1000' onClick={()=>setDropDown(c=>!c)}>
+            <button className={` flex text-center transition ease duration-300 py-2 md:px-4`}>
+                ABOUT APSOH {!dropDown?<FaAngleDown className='text-2xl'/>:<FaAngleUp className='text-2xl'/>}
+            </button>
+            {
+                dropDown &&
+            <div className='flex flex-col items-start justify-center gap-5 p-10 w-72 transition ease duration-1000'>
+                <Link href={'/about'} className='text-left transition ease duration-300 ' onClick={handleState}>ABOUT</Link>
+                <Link href={'/gallary'} className='text-left  transition ease duration-300' onClick={handleState}>Gallary</Link>
+            </div>
+            }
+        </div>
+        <Link href={'/academics'} className='flex items-center' onClick={handleState}>ACADEMICS  </Link>
+        <Link href={'/admissions'} className='flex items-center' onClick={handleState}>ADMISSIONS </Link>
+        <Link href={'/events'} className='flex items-center' onClick={handleState}>EVENTS </Link>
+        <Link href={'/contact'} className='flex items-center' onClick={handleState}>CONTACT  </Link>
         </ul>
 
         <button className={nav?'hamburger open flex flex-col md:hidden z-20 shadow-2xl':'hamburger  flex flex-col md:hidden z-20 shadow-2xl'} onClick={handleNav}>
