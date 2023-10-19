@@ -12,13 +12,13 @@ const about = () => {
       <h1 className='text-center text-4xl font-extrabold  text-[#f1f1f1]'>ABOUT US</h1>
       </div> */}
 
-      <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-10 mt-5'>
+      <div className='flex flex-col md:flex-row items-center justify-between gap-10 mt-5'>
         <Image
           src={svgs[2]}
           alt=''
           width={400}
         />
-        <div className='p-5 md:p-10'>
+        <div className='p-3 md:p-10'>
           <h2 className='text-4xl pb-5 font-bold text-slate-600'>Our Vision</h2>
           <p className='text-[1.1em] text-justify'>
             African Preparatory School of Hope Academy is dedicated to improving the care and education of children . We believe that early childhood is a time of exploration and discovery. We know that young children learn by “hands on” experiences. Our staff is highly qualified to enhance each child’s growth and development in a stimulating atmosphere of warmth and understanding. Our ultimate goal is to allow each child to develop as an individual as well as part of a group in a happy, safe, and nurturing environment.

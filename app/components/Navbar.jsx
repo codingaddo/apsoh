@@ -14,15 +14,18 @@ const Navbar = () => {
 
   
     const handleState = ()=>{
+        !nav && setDropDown(false);   
         setNav(false)
-        !nav &&
         setDropDown(false)
+
     }
 
-   
+ 
 
     const handleNav =()=>{
         setNav(!nav)
+        setDropDown(false)
+        
     
     }
 
@@ -52,8 +55,8 @@ const Navbar = () => {
             {
                 dropDown &&
             <div className='flex flex-col bg-slate-200 items-start justify-center gap-5 p-10 absolute w-72 transition ease duration-1000'>
-                <Link href={'/about'} className='text-center text-sm transition ease duration-300 hover:bg-[#c5efbd]  p-2'>ABOUT</Link>
-                <Link href={'/gallary'} className='text-center text-sm transition ease duration-300 hover:bg-[#c5efbd] p-2' >Gallary</Link>
+                <Link href={'/about'} className='text-center text-sm transition ease duration-300 hover:bg-[#c5efbd]  p-2' onClick={()=>setDropDown(false)}>ABOUT</Link>
+                <Link href={'/gallary'} className='text-center text-sm transition ease duration-300 hover:bg-[#c5efbd] p-2' onClick={()=>setDropDown(false)} >Gallary</Link>
             </div>
             }
         </div>
@@ -64,19 +67,11 @@ const Navbar = () => {
         <Link href={'/contact'} className='text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4'>CONTACT  </Link>
         </ul>
 
-           
-
-        {/* <div className='absolute top-24 left-[50vw] bg-slate-50 p-10'>
-
-        <Container>
-
-        </Container>
-        </div> */}
+        
             
 
         {/* Responsive Navbar */}
        
-        
          <ul className={nav?'flex flex-col w-full h-100vh absolute top-[70px] shadow-xl left-0 z-20 py-16 pt-14 px-44 pl-10 overflow-x-hidden  overflow-auto transition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-5 font-bold md:hidden':'flex flex-col absolute h-100vh top-[70px] shadow-xl -left-96 z-20 py-16 pt-14 px-44 pl-10  ransition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-10 font-bold md:hidden'}>
         <Link href={'/'} className='flex items-center' onClick={handleState}>HOME</Link>
         <div className='cursor-pointer transition ease duration-1000' onClick={()=>setDropDown(c=>!c)}>
@@ -86,8 +81,8 @@ const Navbar = () => {
             {
                 dropDown &&
             <div className='flex flex-col items-start justify-center gap-5 p-10 w-72 transition ease duration-1000'>
-                <Link href={'/about'} className='text-left transition ease duration-300 ' onClick={handleState}>ABOUT</Link>
-                <Link href={'/gallary'} className='text-left  transition ease duration-300' onClick={handleState}>Gallary</Link>
+                <Link href={'/about'} className='text-left transition ease duration-300 ' onClick={()=>{handleState(); setDropDown(true)}}>ABOUT</Link>
+                <Link href={'/gallary'} className='text-left  transition ease duration-300' onClick={()=>{handleState(); setDropDown(true)}}>Gallary</Link>
             </div>
             }
         </div>
