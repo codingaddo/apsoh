@@ -35,6 +35,9 @@ html{
   height: 37px;
   transition: all 0.3s;
 }
+.hamburger:focus{
+  outline: none;
+}
 .top,.middle,.bottom{
   position: absolute; 
   top: 0;
