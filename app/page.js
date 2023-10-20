@@ -81,7 +81,7 @@ export default function Home() {
         <div className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0'>
         <Statistic icon={<FaUserGraduate/>} number={'50K+'} name={'Student'} className={'bg-[#9ed4cb57] p-7'} />
         <Statistic icon={<ImLibrary/>} number={'10'} name={'Facilities'} className={'bg-[#f8e7987d] p-7 cursor-pointer'}  />
-        <Statistic icon={<BiChild/>} number={'8'} name={'Creche Programs'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}/>
+        <Statistic icon={<BiChild/>} number={'8'} name={'Preschool Programs'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}/>
         <Statistic icon={<FaBook/>} number={'15+'} name={'Basic Programs'} className={'bg-[#98f8c77d] p-7 cursor-pointer'}  />
         <Statistic icon={<BsBookHalf/>} number={'18+'} name={'JHS Programs'} className={'bg-[#9ed4cb57] p-7 cursor-pointer'}  />
         <Statistic icon={<BsFillPeopleFill/>} number={'240+'} name={'Staff'} className={'bg-[#cdd38770] p-7 cursor-pointer'}  />

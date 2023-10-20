@@ -4,30 +4,40 @@ import Image from 'next/image';
 import {FaFirstAid} from 'react-icons/fa'
 import {GiGraduateCap, GiAlarmClock} from 'react-icons/gi'
 import Cards from '../components/Cards';
+import Link from 'next/link';
 
 const about = () => {
   return (
-    <div className='p-1 pt-10 sm:pt-10 md:p-10 flex  flex-col items-center'>
-      {/* <div className='about-head bg-lime-600 w-[250px] p-5 mb-7 '>
-      <h1 className='text-center text-4xl font-extrabold  text-[#f1f1f1]'>ABOUT US</h1>
-      </div> */}
-
-      <div className='flex flex-col md:flex-row items-center justify-between gap-10 mt-5'>
+    <>
+      <div className='h-[40vw] md:h-[30vw] w-full relative bg-[#0000005f]'>
         <Image
-          src={svgs[2]}
+          src={svgs[1]}
           alt=''
-          width={400}
+           style={{
+              width:"100%",
+              height:"100%",
+              zIndex: "-40",
+              position: "relative",
+              backgroundColor:"white",
+              objectFit:'contain',
+              paddingTop:'5px'
+
+           }}
         />
+        <h2 className="relative bottom-28 md:bottom-60 font-extrabold text-[#f1f1f1] text-center  text-4xl">About Us</h2>
+      </div>
+    <div className='p-1 pt-10 sm:pt-10 md:p-10 flex  flex-col items-center'>
+     
+
         <div className='p-3 md:p-10'>
-          <h2 className='text-4xl pb-5 font-bold text-slate-600'>Our Vision</h2>
+          <h2 className='text-3xl text-center md:text-left pb-5 font-bold text-slate-600'>Our Vision</h2>
           <p className='text-[1.1em] text-justify'>
             African Preparatory School of Hope Academy is dedicated to improving the care and education of children . We believe that early childhood is a time of exploration and discovery. We know that young children learn by “hands on” experiences. Our staff is highly qualified to enhance each child’s growth and development in a stimulating atmosphere of warmth and understanding. Our ultimate goal is to allow each child to develop as an individual as well as part of a group in a happy, safe, and nurturing environment.
           </p>
         </div>
-      </div>
 
       <div className='p-5 md:p-10'>
-        <h2 className='text-4xl pb-5 font-bold text-slate-600 '>Our Mission</h2>
+        <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600 '>Our Mission</h2>
         <p className='text-[1.1em] text-justify' >
           At APSOH, we nurture a safe and supportive learning environment that promotes high academic and social achievement for all students. We meet the needs of all learners through meaningful instruction and work collaboratively with colleagues and parents to support student learning.
         </p>
@@ -35,7 +45,7 @@ const about = () => {
     
     <div className='p-5 md:p-10 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10 md:gap-16'>
       <div className='list'>
-        <h2 className='text-4xl pb-5 font-bold text-slate-600'>Our Beliefs</h2>
+        <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600'>Our Beliefs</h2>
         <ul>
           <div className='flex'><span className='text-xl pr-2'>👉</span><li className='pb-2'>Students engage in purposeful learning and authentic delivery.</li></div>
           <div className='flex'><span className='text-xl pr-2'>👉</span><li className='pb-2'>Staff members set and hold high expectations for all students.</li></div>
@@ -59,8 +69,12 @@ const about = () => {
      <Cards text={'Hours'} icon={<GiAlarmClock className='text-lime-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
 
       </div>
+       <button className='bg-lime-500 animate-bounce hover:animate-none rounded-lg py-3 relative  w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl  ease duration-300'>
+            <Link href='/contact'>ENROLL NOW</Link>
+          </button>
 
     </div>
+    </>
   )
 }
 export default about;
