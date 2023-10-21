@@ -91,7 +91,7 @@ const Navbar = () => {
                 dropDown.academics &&
             <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-10 absolute w-72 transition ease duration-1000'>
                 <Link href={''} className='text-center text-md transition ease duration-300 hover:underline ' onClick={()=>setDropDown(false)}>STAFF</Link>
-                <Link href={''} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >CALENDER</Link>
+                <Link href={'calender'} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >CALENDER</Link>
                 <Link href={''} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >NEWS</Link>
                 <Link href={''} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >CLUBS</Link>
                 <Link href={''} className='text-center uppercase text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >SCHOOLS</Link>
@@ -148,7 +148,7 @@ const Navbar = () => {
                 dropDown.academics &&
             <div className='flex flex-col items-start justify-center gap-3 p-3 cursor-pointer w-72 transition ease duration-1000'>
                 <Link href={'/about'} className='text-left transition ease duration-300 ' onClick={closeAllDropdowns}>STAFF</Link>
-                <Link href={'/gallary'} className='text-left  transition ease duration-300' onClick={closeAllDropdowns}>CALENDER</Link>
+                <Link href={'/calender'} className='text-left  transition ease duration-300' onClick={closeAllDropdowns}>CALENDER</Link>
                 <Link href={'/gallary'} className='text-left  transition ease duration-300' onClick={closeAllDropdowns}>NEWS</Link>
                 <Link href={'/gallary'} className='text-left  transition ease duration-300 uppercase' onClick={closeAllDropdowns}>schools</Link>
             </div>
