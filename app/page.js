@@ -14,6 +14,7 @@ import pic3 from '../public/assets/c.png'
 import Image from 'next/image'
 import {svgs} from './components/slidePics/svg'
 import Link from 'next/link'
+import DownloadForm from './components/DownloadForm'
 export const data = [pic1,pic2,pic3]
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
           <h2 className=' text-lime-600 text-4xl font-bold'>APSOH Academy</h2>
           <p className='text-slate-500 text-xl'>Dedicated to improving Care and Education for Children</p>
           <button className='bg-lime-500 animate-bounce hover:animate-none rounded-lg py-3 relative left-14 w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl  ease duration-300'>
-            <Link href='/contact'>ENROLL NOW</Link>
+            <Link href='/apply'>ENROLL NOW</Link>
           </button>
         </div>
         <Image
@@ -36,14 +37,32 @@ export default function Home() {
         />
 
       </div>
-    <main className="px-1 flex flex-col gap-14   py-10 md:px-10 bg-[#f8f8f6]">
-      <div className ='block md:hidden text-center md:text-star uppercase text-lime-600'>
-      <h1 className='sm:text-center text-2xl md:text-4xl font-bold'>APSOH</h1>
-      <h2 className='sm:text-center text-xl md:text-2xl font-bold'>Shaping your wards future for the best</h2>
 
+
+        <div className='block md:hidden h-[50vw] md:h-[30vw] w-full relative bg-[#0000005f]'>
+        <Image
+          src={svgs[1]}
+          alt=''
+           style={{
+              width:"100%",
+              height:"100%",
+              zIndex: "-40",
+              position: "relative",
+              backgroundColor:"white",
+              objectFit:'contain',
+              paddingTop:'5px'
+
+           }}
+        />
+       
+        <div className="relative bottom-40 md:bottom-66 font-extrabold text-[#f1f1f1] text-center  text-4xl">
+          <h1 className='font-bold'>Welcome to African Preparatory School of Hope</h1>
+        </div>
       </div>
 
-      <div>
+    <main className="px-1 flex flex-col gap-14   py-10 md:px-10 bg-[#f8f8f6]">
+     
+      <div className=''>
 
       <MyCarousel slidsToShow={1}>
          {
@@ -98,6 +117,7 @@ export default function Home() {
         <Testimonials name={'Jonas'}/>
         </MyCarousel>
        </div>
+      <DownloadForm className={'items-center'}/>
       
     </main>
     </>

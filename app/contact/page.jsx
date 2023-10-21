@@ -1,8 +1,15 @@
 import React from 'react'
+import Head from '../components/Head'
 
 const page = () => {
   return (
-    <div className='h-[100vh]'>contact</div>
+    <>
+    <Head url={'/apply'} text={'APPY NOW'}/>
+    <div className='h-[100vh]'>
+
+    </div>
+
+    </>
   )
 }
 

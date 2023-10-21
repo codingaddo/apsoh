@@ -5,6 +5,7 @@ import {FaFirstAid} from 'react-icons/fa'
 import {GiGraduateCap, GiAlarmClock} from 'react-icons/gi'
 import Cards from '../components/Cards';
 import Link from 'next/link';
+import DownloadForm from '../components/DownloadForm';
 
 const about = () => {
   return (
@@ -31,14 +32,14 @@ const about = () => {
 
         <div className='p-3 md:p-10'>
           <h2 className='text-3xl text-center md:text-left pb-5 font-bold text-slate-600'>Our Vision</h2>
-          <p className='text-[1.1em] text-justify'>
+          <p className='text-[1.2em] text-slate-600 text-justify'>
             African Preparatory School of Hope Academy is dedicated to improving the care and education of children . We believe that early childhood is a time of exploration and discovery. We know that young children learn by “hands on” experiences. Our staff is highly qualified to enhance each child’s growth and development in a stimulating atmosphere of warmth and understanding. Our ultimate goal is to allow each child to develop as an individual as well as part of a group in a happy, safe, and nurturing environment.
           </p>
         </div>
 
       <div className='p-5 md:p-10'>
         <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600 '>Our Mission</h2>
-        <p className='text-[1.1em] text-justify' >
+        <p className='text-[1.2em] text-slate-600 text-justify' >
           At APSOH, we nurture a safe and supportive learning environment that promotes high academic and social achievement for all students. We meet the needs of all learners through meaningful instruction and work collaboratively with colleagues and parents to support student learning.
         </p>
       </div>
@@ -47,10 +48,10 @@ const about = () => {
       <div className='list'>
         <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600'>Our Beliefs</h2>
         <ul>
-          <div className='flex'><span className='text-xl pr-2'>👉</span><li className='pb-2'>Students engage in purposeful learning and authentic delivery.</li></div>
-          <div className='flex'><span className='text-xl pr-2'>👉</span><li className='pb-2'>Staff members set and hold high expectations for all students.</li></div>
-          <div className='flex'><span className='text-xl pr-2'>👉</span><li className='pb-2'>Our Home-School partnership thrives with ongoing communication and parent participation.</li></div>
-          <div className='flex'><span className='text-xl pr-2'>👉</span><li className='pb-2'>Our school community respects and embraces our diversity.</li></div>
+          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1.05em]'>Students engage in purposeful learning and authentic delivery.</li></div>
+          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1.05em]'>Staff members set and hold high expectations for all students.</li></div>
+          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1.05em]'>Our school community respects and embraces our diversity.</li></div>
+          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1.05em]'>Our Home-School partnership thrives with ongoing communication and parent participation.</li></div>
         </ul>
       </div>
 
@@ -69,10 +70,7 @@ const about = () => {
      <Cards text={'Hours'} icon={<GiAlarmClock className='text-lime-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
 
       </div>
-       <button className='bg-lime-500 animate-bounce hover:animate-none rounded-lg py-3 relative  w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl  ease duration-300'>
-            <Link href='/contact'>ENROLL NOW</Link>
-          </button>
-
+      <DownloadForm className={'items-center'}/>
     </div>
     </>
   )
