@@ -1,5 +1,4 @@
 'use client'
-import Slider from './components/Slider'
 import Statistic from './components/Statistic'
 import { FaBook,FaUserGraduate,} from 'react-icons/fa'
 import {BsFillPeopleFill,BsBookHalf} from 'react-icons/bs'

@@ -17,7 +17,6 @@
     "@fullcalendar/timegrid": "^6.1.9",
     "@mui/icons-material": "^5.14.9",
     "autoprefixer": "10.4.16",
-    "bootstrap": "^5.3.2",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
     "flickity": "^2.3.0",

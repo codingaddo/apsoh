@@ -4,10 +4,23 @@ import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import timegridplugin from '@fullcalendar/timegrid'
 import interactionplugin from '@fullcalendar/interaction'
-import * as bootstrap from 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 const page = () => {
+
+  const event = [
+    {
+    title:'PTA Meeting',
+    start:'2023-10-05T08:00:00',
+    end: '2023-10-30T08:59:00',
+  },
+
+  {
+     title:'No school',
+    start:'2023-12-05',
+    end: '2023-12-11',
+  }
+]
+
   return (
     <div className='p-5 md:p-14 flex flex-col'>
       <div className='pb-10'>
@@ -25,6 +38,8 @@ const page = () => {
         }
       }
       height={'100vh'}
+      events={event}
+    
       
       />
     </div>
