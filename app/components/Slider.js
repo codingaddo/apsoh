@@ -30,7 +30,7 @@ const Slider = ({items}) => {
         items.map((item,index)=>{
           return(
               
-            <div key={index} className={index===current?'slede active':'slide'}>
+            <div key={index} className={index===current?'slide active':'slide'}>
               {
                 index === current && 
                  <Image
