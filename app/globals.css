@@ -14,14 +14,14 @@ html{
 
 ::-webkit-scrollbar{
   width:10px;
-  background-color: #9aec6b;
+  /* background-color: #9aec6b; */
   padding: 2px;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb{
   background-color: #32710d;
   border-radius: 10px;
-  width: 8px;
+  width: 10px;
 }
 ::-webkit-scrollbar-thumb:hover{
   background-color: #1f4b06;
@@ -286,6 +286,7 @@ input:valid~label, textarea:focus~label {
 .gallary-wrap .single .img{
   max-width: 100%;
   transition: ease-in 0.5s;
+  border-radius: 15px;
 }
 
 .gallary-wrap .single:hover .img{
@@ -306,6 +307,7 @@ input:valid~label, textarea:focus~label {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 25px;
 }
 
 .slide-container .butt{
@@ -339,14 +341,16 @@ input:valid~label, textarea:focus~label {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100%-70px);
-  height:calc(100%-70px);
+  width: calc(100%-50px);
+  height:calc(100%-50px);
+  border-radius: 25px;
 }
 
 .fullscreen .img{
   max-width: 500px;
   max-height: 500px;
   object-fit: contain;
+  border-radius: 25px;
   pointer-events: none;
     -webkit-user-select: none;
     -ms-user-select: none;

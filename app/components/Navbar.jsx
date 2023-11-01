@@ -53,7 +53,7 @@ const Navbar = () => {
 
         useEffect(()=>{
             window.addEventListener('scroll',()=> {
-                if (window.pageYOffset > 10){
+                if (window.scrollY > 10){
                     setFixed(!fixed);
                 }else{setFixed(fixed)}
 
@@ -61,7 +61,7 @@ const Navbar = () => {
     }, [])
 
   return (
-    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-xl py-5 px-7 w-full ':' fixed  ease-in-out duration-300 top-0 flex justify-between  bg-[#ffffff] shadow-xl py-4 z-40 px-7 w-full'}>
+    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-xl py-4 px-7 w-full ':' fixed  ease-in-out duration-300 top-0 flex justify-between  bg-[#ffffff] shadow-xl py-4 z-40 px-7 w-full'}>
         <h1 className=' w-28'>Logo</h1>
         <ul className='hidden md:flex  justify-between gap-1  font-bold'>
         <Link href={'/'} className={`text-center transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4`}>
@@ -69,13 +69,13 @@ const Navbar = () => {
         </Link>
 
 
-           <div className='cursor-pointer transition ease duration-1000 hover:bg-[#c5efbd]' onMouseEnter={()=>toggleDropdowna('about')} onMouseLeave={()=>setDropDown(false)}>
-            <button className={` flex text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-2`}>
+           <div className= 'cursor-pointer transition ease duration-1000 hover:bg-[]' onMouseEnter={()=>toggleDropdowna('about')} onMouseLeave={()=>setDropDown(false)}>
+            <button className={` flex text-center transition ease duration-300 hover:bg-[] py-2 px-2`}>
                 ABOUT APSOH {dropDown.about?<FaAngleUp className='text-2xl'/>:<FaAngleDown className='text-2xl'/>}
             </button>
             {
                 dropDown.about &&
-            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-10 absolute w-72 transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute  w-72 transition ease duration-1000'>
                 <Link href={'/about'} className='text-center text-md transition ease duration-300 hover:underline ' onClick={()=>setDropDown(false)}>ABOUT</Link>
                 <Link href={'/gallary'} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >GALLARY</Link>
                 <Link href={'/gallary'} className='text-center uppercase text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >our culture</Link>
@@ -83,28 +83,27 @@ const Navbar = () => {
             }
         </div>
 
-           <div className='cursor-pointer transition ease duration-1000 hover:bg-[#c5efbd]' onMouseEnter={()=>toggleDropdowna('academics')} onMouseLeave={()=>setDropDown(false)}>
-            <button className={` flex text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4`}>
+           <div className='cursor-pointer transition ease duration-1000 hover:bg-[]' onMouseEnter={()=>toggleDropdowna('academics')} onMouseLeave={()=>setDropDown(false)}>
+            <button className={` flex text-center transition ease duration-300 hover:bg-[] py-2 px-4`}>
                 ACADEMICS {dropDown.academics?<FaAngleUp className='text-2xl'/>:<FaAngleDown className='text-2xl'/>}
             </button>
             {
                 dropDown.academics &&
-            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-10 absolute w-72 transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-72 transition ease duration-1000'>
                 <Link href={''} className='text-center text-md transition ease duration-300 hover:underline ' onClick={()=>setDropDown(false)}>STAFF</Link>
                 <Link href={'calender'} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >CALENDER</Link>
                 <Link href={''} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >NEWS</Link>
-                <Link href={''} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >CLUBS</Link>
                 <Link href={''} className='text-center uppercase text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >SCHOOLS</Link>
             </div>
             }
         </div>
-           <div className='cursor-pointer transition ease duration-1000 hover:bg-[#c5efbd]' onMouseEnter={()=>toggleDropdowna('admission')} onMouseLeave={()=>setDropDown(false)}>
-            <button className={` flex text-center transition ease duration-300 hover:bg-[#c5efbd] py-2 px-4`}>
+           <div className='cursor-pointer transition ease duration-1000 hover:bg-[]' onMouseEnter={()=>toggleDropdowna('admission')} onMouseLeave={()=>setDropDown(false)}>
+            <button className={` flex text-center transition ease duration-300 hover:bg-[] py-2 px-4`}>
                 ADMISSIONS {dropDown.admission?<FaAngleUp className='text-2xl'/>:<FaAngleDown className='text-2xl'/>}
             </button>
             {
                 dropDown.admission &&
-            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-10 absolute w-72 transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-72 transition ease duration-1000'>
                 <Link href={'/apply'} className='text-center text-md transition ease duration-300 hover:underline ' onClick={()=>setDropDown(false)}>APPLY NOW</Link>
                 <Link href={''} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >FEES</Link>
                 <Link href={''} className='text-center text-md transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >CLUBS</Link>
