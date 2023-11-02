@@ -28,7 +28,7 @@ const Gallary = ({pics}) => {
   }
 
   return (
-    <div>
+    <div className=''>
       {
         openModal && <div className='slide-container'>
           <FaAngleLeft className='prev-btn butt' onClick={handlePrevtBtn}/>

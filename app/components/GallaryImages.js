@@ -7,6 +7,6 @@ import image6 from '../../public/assets/g.jpg'
 import image7 from '../../public/assets/i.jpg'
 import image8 from '../../public/assets/j.jpg'
 
-const pictures = [image1,image2,image3,image4,image5,image6,image7,image8]
+const pictures = [image4,image2,image3,image5,image6,image4,image7,image1,image8,image8,image6]
 
 export default pictures
