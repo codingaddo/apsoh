@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'About|APSOH',
+  title: 'Staff|APSOH',
   description: 'A school website',
 }
 export default function Layout({ children }) {
