@@ -1,43 +1,48 @@
 import React from 'react'
 import { StaffData } from '../components/StaffData'
+import { MdEmail} from 'react-icons/md'
+import Link from 'next/link'
 
 const page = () => {
   return (
     <div className='p-5 md:p-10'>
+        <div className='flex flex-col mb-10 gap-4 px-5'>
+            <h1 className='text-lime-800 text-4xl pl-32'>Staff Directory</h1>
+        </div>
     <div className='flex flex-wrap fle gap-5 items-center justify-center '>
         {
             StaffData.map((staff,index)=>(
-                <div key={index} className='py-4 px-4 pb-16 md:pb-5 border-2 shadow-xl flex flex-col gap-1 w-[80vw] md:w-fit'>
-                    <h2 className='text-lime-700 font-bold text-xl'>{staff.name}</h2>
+                <div key={index} className='py-3 px-4 pb-16 md:pb-5 border-2 flex flex-col gap-1 w-[80vw] md:w-[290px] md:h-[300px]'>
+                    <h2 className='text-lime-900 font-bold text-[1.18em]'>{staff.name}</h2>
                     <div className='flex gap-2'>
-                        <h1 className='text-lime-600 font-bold text-sm'>Position:</h1>
-                        <span className='text-slate-700'>{staff.position}</span>
+                        <h1 className='text-lime-900 font-bold text-[1.01em]'>Position:</h1>
+                        <span className='text-slate-500 text-[1em] font-medium'>{staff.position}</span>
                     </div>
 
                     <div className='flex gap-2'>
-                        <h1 className='text-lime-600 font-bold text-sm'>Subjects:</h1>
-                        <span className='text-slate-700'>{staff.position}</span>
+                        <h1 className='text-lime-900 font-bold text-[1.01em]'>Subjects:</h1>
+                        <span className='text-slate-500 text-[1em] font-medium'>{staff.subject}</span>
                     </div>
 
                     <div className='flex gap-2'>
-                        <h1 className='text-lime-600 font-bold text-sm '>Class:</h1>
-                        <span className='text-slate-700'>{staff.class  }</span>
+                        <h1 className='text-lime-900 font-bold text-[1.01em] '>Class:</h1>
+                        <span className='text-slate-500 text-[1em] font-medium'>{staff.class  }</span>
                     </div>
 
                     <div className='flex gap-2'>
-                        <h1 className='text-lime-600 font-bold text-sm'>Status:</h1>
-                        <span className='text-slate-700'>{staff.status}</span>
+                        <h1 className='text-lime-900 font-bold text-[1.01em]'>Status:</h1>
+                        <span className='text-slate-500 text-[1em] font-medium'>{staff.status}</span>
                     </div>
 
-                    <div className='flex gap-2'>
-                        <h1 className='text-lime-600 font-bold text-sm'>Phone:</h1>
-                        <span className='text-slate-700'>{staff.phone}</span>
-                    </div>
+                    <Link href={`tel:${staff.phone}`} className='flex gap-2'>
+                        <h1 className='text-lime-900 font-bold text-[1.01em]'>Phone:</h1>
+                        <span className='text-slate-500 text-[1em] font-medium underline'>{staff.phone}</span>
+                    </Link>
 
-                    <div className='flex gap-2'>
-                        <h1 className='text-lime-600 font-bold text-sm'>Email:</h1>
-                        <span className='text-slate-700'>{staff.email}</span>
-                    </div>
+                    <Link href={`mailto:${staff.email}`} className='flex items-center text-lime-900 gap-1 '>
+                        <h1 className='tex-lime-900 font-bold text-2xl '><MdEmail/></h1>
+                        <span className='text-slat-500 text-[1em] font-medium underline'>{staff.email}</span>
+                    </Link>
 
                 </div>
             ))
