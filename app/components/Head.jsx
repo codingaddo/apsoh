@@ -10,7 +10,7 @@ const Head = ({imageUrl,text,url}) => {
         <div className='hidden md:block'>
 
         <Image
-          src={svgs[1]}
+          src={imageUrl || svgs[1]}
           alt=''
            style={{
               width:"100%",

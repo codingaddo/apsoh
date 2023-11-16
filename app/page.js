@@ -102,7 +102,9 @@ export default function Home() {
         <Statistic icon={<BiChild/>} number={'8'} name={'Preschool Programs'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}/>
         <Statistic icon={<FaBook/>} number={'15+'} name={'Basic Programs'} className={'bg-[#98f8c77d] p-7 cursor-pointer'}  />
         <Statistic icon={<BsBookHalf/>} number={'18+'} name={'JHS Programs'} className={'bg-[#9ed4cb57] p-7 cursor-pointer'}  />
-        <Statistic icon={<BsFillPeopleFill/>} number={'240+'} name={'Staff'} className={'bg-[#cdd38770] p-7 cursor-pointer'}  />
+        <Link href={'/staff'}>
+           <Statistic icon={<BsFillPeopleFill/>} number={'240+'} name={'Staff'} className={'bg-[#cdd38770] p-7 cursor-pointer'}  />
+        </Link>
         </div>
       </div>
        <div className='md:p-10 p-5 rounded-3xl bg-[#f9f3d670]'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaFacebook,FaTwitter,FaInstagram,FaYoutube} from 'react-icons/fa'
+import { FaFacebook,FaTwitter,FaInstagram,FaYoutube,FaWhatsapp} from 'react-icons/fa'
 
 
 const Socials = ({className,iconStyles}) => {
@@ -18,6 +18,10 @@ const Socials = ({className,iconStyles}) => {
             </div>
              <div className={` ${iconStyles} bg-[#6BF178] text-sm flex justify-center items-center p-2 cursor-pointer transition-all duration-300 hover:scale-125 hover:bg-[#6fc249]`}>
             <FaYoutube/>
+
+            </div>
+             <div className={` ${iconStyles} bg-[#6BF178] text-sm flex justify-center items-center p-2 cursor-pointer transition-all duration-300 hover:scale-125 hover:bg-[#6fc249]`}>
+            <FaWhatsapp/>
 
             </div>
         </div>

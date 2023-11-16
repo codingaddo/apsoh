@@ -41,9 +41,9 @@ const page = () => {
         selectMirror={true}
       headerToolbar ={
                 {
-          start: 'today,prev,next', // will normally be on the left. if RTL, will be on the right
-          center: 'title',
-          end: 'dayGridMonth,timeGridWeek' // will normally be on the right. if RTL, will be on the left
+          start: 'title', // will normally be on the left. if RTL, will be on the right
+          center: '',
+          end: 'prev,next' // will normally be on the right. if RTL, will be on the left
         }
       }
       height={'100vh'}

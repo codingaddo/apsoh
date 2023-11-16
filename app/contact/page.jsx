@@ -1,14 +1,18 @@
 import React from 'react'
 import Head from '../components/Head'
+import contact from '../../public/assets/contact.svg'
+import Map from '../components/Map'
 
 const page = () => {
+
+
   return (
     <>
-    <Head url={'/apply'} text={'APPY NOW'}/>
-    <div className='p-5 md:p-10 flex flex-col-reverse items-start gap-10 md:flex-row'>
-     <div className="container">
-        <h2 className="heading text-4xl text-slate-600 ">Contact Us</h2>
-        <form action="" className="form w-[100%] md:w-[50%]">
+    <Head url={'/apply'} text={'APPY NOW'} imageUrl={contact}/>
+    <div className='p-5 md:p-10 flex flex-col items-start justify-around gap-5 md:flex-row'>
+     <div className="container md:w-[40%]">
+        <h2 className="heading text-2xl text-slate-600 font-medium ">Contact Us</h2>
+        <form action="" className="form w-[100%]">
             <div className="input-field">
                 <input id="username" name="text" type="text" autocomplete="off" required/>
                 <label for="username">Full Name</label>
@@ -39,11 +43,17 @@ const page = () => {
             </div>
         </form>
     </div>
-    <div className='p-5'>
-      <h2 className='text-4xl text-slate-600'>Information</h2>
+    <div className='flex flex-col gap-5 '>
+      <div className='flex flex-col  text-slate-600'>
+      <span className='text-md text-slate-600 font-medium'>Post Office Box 999,Medie-Samsam,Accra</span>
+      <span className='text-md text-slate-600 font-medium'>0551817972</span>
+      </div>
+        <Map/>
     </div>
 
     </div>
+
+   
 
     </>
   )

@@ -96,8 +96,8 @@ const Navbar = () => {
     }, [])
 
   return (
-    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-xl py-4 px-7 w-full ':' fixed  ease-in-out duration-300 top-0 flex justify-between  bg-[#ffffff] shadow-xl py-4 z-40 px-7 w-full'}>
-        <h1 className=' w-28'>Logo</h1>
+    <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-2xl py-4 px-4 md:px-7  w-full ':' fixed  ease-in-out duration-300 top-0 flex justify-between  bg-[#ffffff] shadow-2xl py-4 z-40 px-4 md:px-7  w-full'}>
+        <h1 className=' w-28 text-[#66b539] text-xl '>LOGO</h1>
         <ul className='hidden md:flex  justify-between gap-1 font-medium '>
         <Link href={'/'} className={`text-center text-sm transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4`}>
             HOME
@@ -112,8 +112,9 @@ const Navbar = () => {
                 dropDown.about &&
             <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute  w-72 transition ease duration-1000'>
                 <Link href={'/about'} className='text-center text-sm transition ease duration-300 hover:underline ' onClick={()=>setDropDown(false)}>ABOUT</Link>
-                <Link href={'/gallary'} className='text-center text-sm transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >GALLARY</Link>
                 <Link href={''} className='text-center text-sm transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >CLUBS</Link>
+                <Link href={'/gallary'} className='text-center text-sm transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >GALLARY</Link>
+                <Link href={'/gallary'} className='text-center  text-sm transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >FACILITIES</Link>
                 <Link href={'/gallary'} className='text-center  text-sm transition ease duration-300 hover:underline  ' onClick={()=>setDropDown(false)} >OUR CULTURE</Link>
             </div>
             }
@@ -159,53 +160,54 @@ const Navbar = () => {
 
         {/* Responsive Navbar */}
        
-         <ul className={nav?'flex flex-col w-full max-h-[100vh] absolute top-[68px] shadow-xl left-0 z-20 py-16 pt-14 px-44 pl-10 overflow-y-auto transition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-7 font-medium md:hidden':' overflow-y-auto flex flex-col absolute max-h-[100vh] top-[68px] shadow-2xl -left-96 z-20 py-16 pt-14 px-44 pl-10  transition-all  ease-in duration-300 bg-[#ffffff]  justify-between gap-7 font-medium md:hidden'}>
-        <Link href={'/'} className='text-sm' onClick={handleState}>HOME</Link>
-        <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-left' onClick={toggleDropdown1}>
-            <button className={` flex  items-center  text-sm transition ease duration-300 min-w-[120px]  md:px-4`}>
-                ABOUT APSOH {isOpen1?<FaAngleUp className=''/>:<FaAngleDown className=''/>}
+         <ul className={nav?'flex flex-col w-full h-[93vh] absolute top-[68px] shadow-xl left-0 z-20 py-10 pt-2  overflow-y-auto transition-all  ease-in duration-300 bg-[#ffffff]  gap-1 font-medium md:hidden':' overflow-y-auto flex flex-col absolute h-[93vh] top-[68px] -left-96 z-20 py-2 pt-1  transition-all  ease-in duration-300 bg-[#ffffff]   gap-1 font-medium md:hidden'}>
+        <Link href={'/'} className='text-sm bg-slate-100 p-5 hover:bg-slate-200 text-[#66b539]' onClick={handleState}> <span>HOME</span></Link>
+        <li className='w-full cursor-pointer transition ease duration-1000 focus:outline-none text-left text-[#66b539] ' onClick={toggleDropdown1}>
+            <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-200`}>
+               <span> ABOUT APSOH</span> {isOpen1?<FaAngleUp className=' text-[20px]'/>:<FaAngleDown className=' text-[20px]'/>}
             </button>
             {
                 isOpen1 &&
-            <div className='flex flex-col items-start justify-center gap-4 py-2 cursor-pointer w-72 transition ease duration-1000'>
-                <Link href={'/about'} className='text-left text-sm transition ease duration-300 ' onClick={closeAllDropdowns}>ABOUT</Link>
-                <Link href={'/gallary'} className='text-left text-sm  transition ease duration-300' onClick={closeAllDropdowns}>GALLARY</Link>
-                <Link href={'/clubs'} className='text-left text-sm   transition ease duration-300' onClick={closeAllDropdowns}>CLUBS</Link>
-                <Link href={'/gallary'} className='text-left text-sm  transition ease duration-300' onClick={closeAllDropdowns}>OUR CULTURE</Link>
+            <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
+                <Link href={'/about'} className='bg-slate-100 w-full p-5 text-left text-sm transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>ABOUT</Link>
+                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>GALLARY</Link>
+                <Link href={'/clubs'} className='bg-slate-100 w-full p-5 text-left text-sm   transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>CLUBS</Link>
+                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>FACILITIES</Link>
+                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>OUR CULTURE</Link>
 
             </div>
             }
         </li>
-        <li className='cursor-pointer transition ease duration-1000 focus:outline-none' onClick={toggleDropdown2}>
-            <button className={` flex justify-center items-center text-center text-sm transition ease duration-300  md:px-4`}>
-                ACADEMICS {isOpen2?<FaAngleUp className=''/>:<FaAngleDown className=''/>}
+        <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-[#66b539] ' onClick={toggleDropdown2}>
+            <button className={`bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-200`}>
+                <span>ACADEMICS</span> {isOpen2?<FaAngleUp className='text-[20px]'/>:<FaAngleDown className='text-[20px]'/>}
             </button>
             {
                 isOpen2 &&
-            <div className='flex flex-col items-start justify-center gap-4 py-2 cursor-pointer w-72 transition ease duration-1000'>
-                <Link href={'/staff'} className='text-left text-sm transition ease duration-300 ' onClick={closeAllDropdowns}>STAFF</Link>
-                <Link href={'/calender'} className='text-left text-sm  transition ease duration-300' onClick={closeAllDropdowns}>CALENDER</Link>
-                <Link href={'/gallary'} className='text-left  text-sm transition ease duration-300' onClick={closeAllDropdowns}>NEWS</Link>
-                <Link href={'/gallary'} className='text-left  text-sm transition ease duration-300' onClick={closeAllDropdowns}>SCHOOLS</Link>
+            <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
+                <Link href={'/staff'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200 ' onClick={closeAllDropdowns}>STAFF</Link>
+                <Link href={'/calender'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>CALENDER</Link>
+                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>NEWS</Link>
+                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>SCHOOLS</Link>
             </div>
             }
         </li>
-        <li className='cursor-pointer transition ease duration-1000 focus:outline-none' onClick={toggleDropdown3}>
-            <button className={` flex justify-center items-center text-center text-sm transition ease duration-300  md:px-4`}>
-                ADMISSIONS {isOpen3?<FaAngleUp className=''/>:<FaAngleDown className=''/>}
+        <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-[#66b539] ' onClick={toggleDropdown3}>
+            <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-200`}>
+                 <span>ADMISSIONS</span> {isOpen3?<FaAngleUp className='text-[20px] text-[#66b539]'/>:<FaAngleDown className='text-[20px] text-[#66b539]'/>}
             </button>
             {
                 isOpen3 &&
-            <div className='flex flex-col items-start justify-center gap-4 py-2 cursor-pointer w-72 transition ease duration-1000'>
-                <Link href={'/fees'} className='text-left text-sm  transition ease duration-300' onClick={closeAllDropdowns}>FEES</Link>
-                <Link href={'/apply'} className='text-left text-sm  transition ease duration-300 ' onClick={closeAllDropdowns}>APPLY NOW</Link>
+            <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
+                <Link href={'/fees'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>FEES</Link>
+                <Link href={'/apply'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>APPLY NOW</Link>
                 
             </div>
             }
         </li>
        
-        <Link href={'/events'} className=' text-sm' onClick={handleState}>EVENTS </Link>
-        <Link href={'/contact'} className=' text-sm' onClick={handleState}>CONTACT  </Link>
+        <Link href={'/events'} className=' text-sm bg-slate-100 p-4 hover:bg-slate-200 text-[#66b539]' onClick={handleState}> <span>EVENTS</span> </Link>
+        <Link href={'/contact'} className=' text-sm bg-slate-100 p-5 hover:bg-slate-200 text-[#66b539]' onClick={handleState}><span>CONTACT </span> </Link>
         </ul>
 
         <button className={nav?'hamburger open flex flex-col md:hidden z-20 shadow-2xl focus:outline-none':'hamburger  flex flex-col md:hidden z-20 shadow-2xl focus:outline-none'} onClick={handleNav}>
