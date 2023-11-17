@@ -113,7 +113,7 @@ const Navbar = () => {
             </button>
             {
                 dropDown.about &&
-            <div className='flex flex-col bg-[#c5efbd] items-center justify-center gap-2 p-5 absolute w-[7.85rem] transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-center justify-center gap-2 p-5 absolute w-[8.5rem] rounded-b-lg transition ease duration-1000'>
                 <Link href={'/about'} className={pathname==='/about'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)}>ABOUT</Link>
                 <Link href={'/clubs'} className={pathname==='/clubs'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >CLUBS</Link>
                 <Link href={'/gallary'} className={pathname==='/gallary'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >GALLARY</Link>
