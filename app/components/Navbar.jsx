@@ -113,7 +113,7 @@ const Navbar = () => {
             </button>
             {
                 dropDown.about &&
-            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-[125.5px] transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-[125.8px] transition ease duration-1000'>
                 <Link href={'/about'} className={pathname==='/about'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)}>ABOUT</Link>
                 <Link href={'/clubs'} className={pathname==='/clubs'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >CLUBS</Link>
                 <Link href={'/gallary'} className={pathname==='/gallary'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >GALLARY</Link>
@@ -129,7 +129,7 @@ const Navbar = () => {
             </button>
             {
                 dropDown.academics &&
-            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-[124px] transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-[125px] transition ease duration-1000'>
                 <Link href={'/staff'} className={pathname==='/staff'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)}>STAFF</Link>
                 <Link href={'/calender'} className={pathname==='/calender'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >CALENDER</Link>
                 <Link href={'/schools'} className={pathname==='/schools'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >SCHOOLS</Link>
@@ -142,7 +142,7 @@ const Navbar = () => {
             </button>
             {
                 dropDown.admission &&
-            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-[130.5px] transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-start justify-center gap-2 p-5 absolute w-[131px] transition ease duration-1000'>
                 <Link href={'/apply'} className={pathname==='/apply'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)}>APPLY NOW</Link>
                 <Link href={'/fees'} className={pathname==='/fees'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >FEES</Link>
             </div>
