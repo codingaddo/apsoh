@@ -31,11 +31,11 @@ const Footer = () => {
             <div className='flex flex-col gap-3'>
                 <div className='flex flex-col gap-3'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Academics</h3>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>Fees</Link>
+                    <Link href={'/fees'} className='text-[#f1f1f1] text-md font-md hover:underline'>Fees</Link>
                 </div>
                 <div className='flex flex-col gap-3'>
                     <Link href={'/staff'} className='text-[#f1f1f1] text-md font-md hover:underline'>Staff</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline '>Schools</Link>
+                    <Link href={'/schools'} className='text-[#f1f1f1] text-md font-md hover:underline '>Schools</Link>
                     <Link href={'/apply'} className='text-[#f1f1f1] text-md font-md hover:underline '>Apply Now</Link>
                     
                 </div>
@@ -48,16 +48,16 @@ const Footer = () => {
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Who We Are</h3>
                     <Link href={'/about'} className='text-[#f1f1f1] text-md font-md hover:underline'>About Us</Link>
                     <Link href={'/gallary'} className='text-[#f1f1f1] text-md font-md hover:underline'>Gallary</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>Facilities</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md font-md hover:underline'>Our Culture</Link>
+                    <Link href={'/facilities'} className='text-[#f1f1f1] text-md font-md hover:underline'>Facilities</Link>
+                    <Link href={'/ourculture'} className='text-[#f1f1f1] text-md font-md hover:underline'>Our Culture</Link>
                     
                 </div>
             <div className='flex flex-col gap-3'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Contacts</h3>
-                    <Link href={''} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaLocationArrow/> </button>Post Office Box 28, Samsam Accra,Ghana</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Propritor Office +233 551 817 972</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Principal Office +233 551 8172 972</Link>
-                    <Link href={''} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaMailBulk/> </button> info@apsoh.edu.gh</Link>
+                    <Link href={'/contact'} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaLocationArrow/> </button>Post Office Box 28, Samsam Accra,Ghana</Link>
+                    <Link href={'tel:0551817972'} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Propritor Office +233 551 817 972</Link>
+                    <Link href={'tel:0551817972'} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaPhoneSquare/> </button>Principal Office +233 551 8172 972</Link>
+                    <Link href={'mailto:xzy@gmail.com'} className='text-[#f1f1f1] text-md flex gap-2 font-md hover:underline'><button className='text-[#6BF178] text-sm'><FaMailBulk/> </button> info@apsoh.edu.gh</Link>
                     
                 </div>
 
