@@ -171,11 +171,11 @@ const Navbar = () => {
             {
                 isOpen1 &&
             <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
-                <Link href={'/about'} className={pathname==='/about'} onClick={closeAllDropdowns}>ABOUT</Link>
-                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>GALLARY</Link>
-                <Link href={'/clubs'} className='bg-slate-100 w-full p-5 text-left text-sm   transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>CLUBS</Link>
-                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>FACILITIES</Link>
-                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>OUR CULTURE</Link>
+                <Link href={'/about'} className={pathname==='/about'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>ABOUT</Link>
+                <Link href={'/gallary'} className={pathname==='/gallary'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>GALLARY</Link>
+                <Link href={'/clubs'} className={pathname==='/clubs'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>CLUBS</Link>
+                <Link href={'/facilities'} className={pathname==='/facilities'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>FACILITIES</Link>
+                <Link href={'/ourculture'} className={pathname==='/ourculture'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>OUR CULTURE</Link>
 
             </div>
             }
@@ -187,9 +187,9 @@ const Navbar = () => {
             {
                 isOpen2 &&
             <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
-                <Link href={'/staff'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200 ' onClick={closeAllDropdowns}>STAFF</Link>
-                <Link href={'/calender'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>CALENDER</Link>
-                <Link href={'/gallary'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>SCHOOLS</Link>
+                <Link href={'/staff'} className={pathname==='/staff'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>STAFF</Link>
+                <Link href={'/calender'} className={pathname==='/calender'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>CALENDER</Link>
+                <Link href={'/schools'} className={pathname==='/schools'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>SCHOOLS</Link>
             </div>
             }
         </li>
@@ -200,8 +200,8 @@ const Navbar = () => {
             {
                 isOpen3 &&
             <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
-                <Link href={'/fees'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>FEES</Link>
-                <Link href={'/apply'} className='bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-200' onClick={closeAllDropdowns}>APPLY NOW</Link>
+                <Link href={'/fees'} className={pathname==='/fees'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>FEES</Link>
+                <Link href={'/apply'} className={pathname==='/apply'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>APPLY NOW</Link>
                 
             </div>
             }
