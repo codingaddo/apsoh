@@ -113,7 +113,7 @@ const Navbar = () => {
             </button>
             {
                 dropDown.about &&
-            <div className='flex flex-col bg-[#c5efbd] items-center justify-center gap-2 p-5 min-w-[125.9px] rounded-b-lg absolute  transition ease duration-1000'>
+            <div className='flex flex-col bg-[#c5efbd] items-center justify-center gap-2 p-5 w-[125.9px] rounded-b-lg absolute  transition ease duration-1000'>
                 <Link href={'/about'} className={pathname==='/about'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)}>ABOUT</Link>
                 <Link href={'/clubs'} className={pathname==='/clubs'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >CLUBS</Link>
                 <Link href={'/gallary'} className={pathname==='/gallary'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >GALLARY</Link>
@@ -165,43 +165,43 @@ const Navbar = () => {
          <ul className={nav?'flex flex-col w-full h-[93vh] absolute top-[68px] shadow-xl left-0 z-20 py-10 pt-2  overflow-y-auto transition-all  ease-in duration-300 bg-[#ffffff]  gap-1 font-medium md:hidden':' overflow-y-auto flex flex-col absolute h-[93vh] top-[68px] -left-96 z-20 py-2 pt-1  transition-all  ease-in duration-300 bg-[#ffffff]   gap-1 font-medium md:hidden'}>
         <Link href={'/'} className={pathname==='/'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-[#66b539]':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-[#66b539]'} onClick={handleState}> <span>HOME</span></Link>
         <li className='w-full cursor-pointer transition ease duration-1000 focus:outline-none text-left text-[#66b539] ' onClick={toggleDropdown1}>
-            <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-200`}>
+            <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-300`}>
                <span> ABOUT APSOH</span> {isOpen1?<FaAngleUp className=' text-[20px]'/>:<FaAngleDown className=' text-[20px]'/>}
             </button>
             {
                 isOpen1 &&
-            <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
-                <Link href={'/about'} className={pathname==='/about'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>ABOUT</Link>
-                <Link href={'/gallary'} className={pathname==='/gallary'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>GALLARY</Link>
-                <Link href={'/clubs'} className={pathname==='/clubs'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>CLUBS</Link>
-                <Link href={'/facilities'} className={pathname==='/facilities'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>FACILITIES</Link>
-                <Link href={'/ourculture'} className={pathname==='/ourculture'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>OUR CULTURE</Link>
+            <div className=' bg-zinc-500 text-[#f1f1f1] flex flex-col items-start justify-center gap-1  py-1  cursor-pointer w-full transition ease duration-1000'>
+                <Link href={'/about'} className={pathname==='/about'?'w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':'w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>ABOUT</Link>
+                <Link href={'/gallary'} className={pathname==='/gallary'?' w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>GALLARY</Link>
+                <Link href={'/clubs'} className={pathname==='/clubs'?' w-full text-orange-500 pl-5  p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>CLUBS</Link>
+                <Link href={'/facilities'} className={pathname==='/facilities'?'w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>FACILITIES</Link>
+                <Link href={'/ourculture'} className={pathname==='/ourculture'?' w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>OUR CULTURE</Link>
 
             </div>
             }
         </li>
         <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-[#66b539] ' onClick={toggleDropdown2}>
-            <button className={`bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-200`}>
+            <button className={`bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-300`}>
                 <span>ACADEMICS</span> {isOpen2?<FaAngleUp className='text-[20px]'/>:<FaAngleDown className='text-[20px]'/>}
             </button>
             {
                 isOpen2 &&
-            <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
-                <Link href={'/staff'} className={pathname==='/staff'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>STAFF</Link>
-                <Link href={'/calender'} className={pathname==='/calender'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>CALENDER</Link>
-                <Link href={'/schools'} className={pathname==='/schools'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>SCHOOLS</Link>
+            <div className='bg-zinc-500 text-[#f1f1f1] flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
+                <Link href={'/staff'} className={pathname==='/staff'?'text-orange-500 w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>STAFF</Link>
+                <Link href={'/calender'} className={pathname==='/calender'?'text-orange-500 w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>CALENDER</Link>
+                <Link href={'/schools'} className={pathname==='/schools'?'text-orange-500 w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>SCHOOLS</Link>
             </div>
             }
         </li>
         <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-[#66b539] ' onClick={toggleDropdown3}>
-            <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-200`}>
+            <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-300`}>
                  <span>ADMISSIONS</span> {isOpen3?<FaAngleUp className='text-[20px] text-[#66b539]'/>:<FaAngleDown className='text-[20px] text-[#66b539]'/>}
             </button>
             {
                 isOpen3 &&
-            <div className='flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
-                <Link href={'/fees'} className={pathname==='/fees'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>FEES</Link>
-                <Link href={'/apply'} className={pathname==='/apply'?'bg-slate-300 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300':'bg-slate-100 w-full p-5 text-left text-sm  transition ease duration-300 hover:bg-slate-300'} onClick={closeAllDropdowns}>APPLY NOW</Link>
+            <div className='bg-zinc-500 text-[#f1f1f1] flex flex-col items-start justify-center gap-1 py-1  cursor-pointer w-full transition ease duration-1000'>
+                <Link href={'/fees'} className={pathname==='/fees'?' text-orange-500 w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':'w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>FEES</Link>
+                <Link href={'/apply'} className={pathname==='/apply'?' text-orange-500 w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':'w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>APPLY NOW</Link>
                 
             </div>
             }
