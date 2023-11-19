@@ -16,6 +16,7 @@ const Testimonials = ({title,text,imgageUrl,name,stage}) => {
                         src={pic}
                         alt='picture'
                         placeholder='blur'
+                        loading='lazy'
                         // width={120}
                         // height={120}
                         style={{

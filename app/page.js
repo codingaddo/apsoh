@@ -32,6 +32,8 @@ export default function Home() {
         src={svgs[0]}
         height={300}
         alt='educator'
+        // loading='lazy'
+        priority
         // className='hidden md:block'
         />
 
@@ -42,6 +44,7 @@ export default function Home() {
         <Image
           src={svgs[1]}
           alt=''
+          loading='lazy'
            style={{
               width:"100%",
               height:"100%",
@@ -74,6 +77,7 @@ export default function Home() {
                  <Image
               src={item}
               alt='news'
+              loading='lazy'
               style={{
                 width:'1000px',
                 height:'420px',

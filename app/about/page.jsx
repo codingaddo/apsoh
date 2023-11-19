@@ -14,6 +14,9 @@ const about = () => {
         <Image
           src={svgs[1]}
           alt=''
+        //  loading='lazy'
+         priority
+
            style={{
               width:"100%",
               height:"100%",

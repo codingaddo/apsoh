@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react';
 export default function MovingDot() {
+  
   const [position, setPosition] = useState({
     x: -10,
     y: -10
@@ -20,13 +21,16 @@ export default function MovingDot() {
   })
       }
       style={{
-        position: 'relative',
+        // position: 'absolute',
         width: '100vw',
         height: '100vh',
+        zIndex:'999999'
       }}>
+
+
       <div style={{
         position: 'absolute',
-        backgroundColor: 'red',
+        backgroundColor: 'rgb(101,163,13)',
         borderRadius: '50%',
         transform: `translate(${position.x}px, ${position.y}px)`,
         left: -10,

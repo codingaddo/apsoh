@@ -1,0 +1,16 @@
+.mouseMove {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    background-color:#6BF178;
+    z-index: 99999;
+    border-radius: 50%;
+    transition: 100ms ease;
+}
+
+@media screen and (max-width:600px) {
+    .mouseMove {
+        display: none;
+    }
+
+}
