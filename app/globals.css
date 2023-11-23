@@ -86,7 +86,7 @@ html{
   position: absolute;
   top: 50%;
   right: 32px;
-  color: #66b539;
+  color: #1d9840;
   font-size:3em;
   user-select:none;
   z-index: 10;
@@ -96,7 +96,7 @@ html{
   position: absolute;
   top: 50%;
   left: 32px;
-  color: #66b539;
+  color: #1d9840;
   font-size:3em;
   user-select:none;
   z-index: 10;
@@ -184,23 +184,20 @@ html{
   border-radius: 10px;
   border: solid 1px #1faa10;
   border-bottom: solid 1px #85fe7a;
-  background: linear-gradient(135deg, #00de1a, #22ff00);
+  background: #109e1f;
   color: #fff;
   font-weight: bolder;
   transition: all 0.2s ease;
-  box-shadow: 0px 2px 3px #000d3848,
-    inset 0px 4px 5px #00f010,
-    inset 0px -4px 5px #22bb00;
+  box-shadow: 0px 2px 3px #000d3848;
 }
 
 .form .btn:active {
-  box-shadow: inset 0px 4px 5px #10f000,
-    inset 0px -4px 5px #00bb10;
+  /* box-shadow: inset 0px 4px 5px #0e6708; */
   transform: scale(0.995);
 }
 
 .form .btn:hover{
-  background: #46af3b;
+  background: #148e06;
   scale: 1.1;
 }
 
@@ -234,7 +231,7 @@ html{
 .input-field input:focus,textarea:focus
 .input-field input:valid, textarea:focus {
   outline: none;
-  border: solid 1px #08f433;
+  border: solid 1px #0a781e;
 }
 
 .input-field input:focus~label,
@@ -242,7 +239,7 @@ input:valid~label, textarea:focus~label {
   transform: translateY(-51%) translateX(-10px) scale(0.8);
   background-color: #fff;
   padding: 0px 5px;
-  color: #03a909;
+  color: #129816;
   font-weight: bold;
   letter-spacing: 1px;
   border: none;

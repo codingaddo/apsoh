@@ -1,14 +1,26 @@
 import React, { useEffect, useState } from "react"
-const useScroll = () =>{
-    const [top,setTop] = useState(false)
+const useScroll = () => {
+    const [backtoTop,setBacktoTop]=useState(false)
     useEffect(()=>{
+      window.addEventListener('scroll',()=>{
         if(window.scrollY>100){
-            setTop(!top)
+          setBacktoTop(!backtoTop)
         }else{
-            setTop(top)
+          setBacktoTop(backtoTop)
         }
-    },[top])
+      })
 
-    return [top,setTop]
+    },[])
+
+    const scrollUp = ()=>{
+     window.scroll({
+        top:0,
+        behavior:'smooth'
+      })
+    }
+  return [backtoTop,setBacktoTop,scrollUp]
+   
+  
 }
+
 export default useScroll

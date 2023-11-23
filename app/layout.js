@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import TopNavbar from './components/TopNavbar'
 import styles from './styles/mouseanime.module.css'
 import './globals.css'
+import BackToTop from './components/BackToTop'
 // import { Inter } from 'next/font/google'
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -33,6 +34,7 @@ export default function RootLayout({ children}) {
 
         <TopNavbar/>
         <Navbar/>
+        <BackToTop/>
         {children}
         <Footer/>
         </body>

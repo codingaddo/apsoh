@@ -100,7 +100,7 @@ const Navbar = () => {
 
   return (
     <div className={!fixed?'flex relative justify-between items-center  z-40 bg-[#ffffff] shadow-2xl py-4 px-4 md:px-7  w-full ':' fixed  ease-in-out duration-300 top-0 flex justify-between  bg-[#ffffff] shadow-2xl py-4 z-40 px-4 md:px-7  w-full'}>
-        <h1 className=' w-28 text-[#66b539] text-xl '>LOGO</h1>
+        <h1 className=' w-28 text-green-800 text-xl '>LOGO</h1>
         <ul className='hidden md:flex  justify-between gap-1 font-medium '>
         <Link href={'/'} className={pathname==='/'?'rounded-lg text-center text-sm transition ease duration-1000 bg-[#c5efbd] py-2 px-4':'rounded-lg text-center text-sm transition ease duration-1000 hover:bg-[#c5efbd] py-2 px-4'}>
             HOME
@@ -163,8 +163,8 @@ const Navbar = () => {
         {/* Responsive Navbar */}
        
          <ul className={nav?'flex flex-col w-full h-[93vh] absolute top-[68px] shadow-xl left-0 z-20 py-10 pt-2  overflow-y-auto transition-all  ease-in duration-300 bg-[#ffffff]  gap-1 font-medium md:hidden':' overflow-y-auto flex flex-col absolute h-[93vh] top-[68px] -left-96 z-20 py-2 pt-1  transition-all  ease-in duration-300 bg-[#ffffff]   gap-1 font-medium md:hidden'}>
-        <Link href={'/'} className={pathname==='/'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-[#66b539]':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-[#66b539]'} onClick={handleState}> <span>HOME</span></Link>
-        <li className='w-full cursor-pointer transition ease duration-1000 focus:outline-none text-left text-[#66b539] ' onClick={toggleDropdown1}>
+        <Link href={'/'} className={pathname==='/'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-green-500':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-green-500'} onClick={handleState}> <span>HOME</span></Link>
+        <li className='w-full cursor-pointer transition ease duration-1000 focus:outline-none text-left text-green-500 ' onClick={toggleDropdown1}>
             <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-300`}>
                <span> ABOUT APSOH</span> {isOpen1?<FaAngleUp className=' text-[20px]'/>:<FaAngleDown className=' text-[20px]'/>}
             </button>
@@ -180,7 +180,7 @@ const Navbar = () => {
             </div>
             }
         </li>
-        <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-[#66b539] ' onClick={toggleDropdown2}>
+        <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-green-500 ' onClick={toggleDropdown2}>
             <button className={`bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-300`}>
                 <span>ACADEMICS</span> {isOpen2?<FaAngleUp className='text-[20px]'/>:<FaAngleDown className='text-[20px]'/>}
             </button>
@@ -193,9 +193,9 @@ const Navbar = () => {
             </div>
             }
         </li>
-        <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-[#66b539] ' onClick={toggleDropdown3}>
+        <li className='cursor-pointer transition ease duration-1000 focus:outline-none text-green-500 ' onClick={toggleDropdown3}>
             <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-300`}>
-                 <span>ADMISSIONS</span> {isOpen3?<FaAngleUp className='text-[20px] text-[#66b539]'/>:<FaAngleDown className='text-[20px] text-[#66b539]'/>}
+                 <span>ADMISSIONS</span> {isOpen3?<FaAngleUp className='text-[20px] text-green-500'/>:<FaAngleDown className='text-[20px] text-green-500'/>}
             </button>
             {
                 isOpen3 &&
@@ -207,14 +207,14 @@ const Navbar = () => {
             }
         </li>
        
-        <Link href={'/events'} className={pathname==='/events'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-[#66b539]':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-[#66b539]'} onClick={handleState}> <span>EVENTS</span> </Link>
-        <Link href={'/contact'} className={pathname==='/contact'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-[#66b539]':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-[#66b539]'} onClick={handleState}><span>CONTACT </span> </Link>
+        <Link href={'/events'} className={pathname==='/events'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-green-500':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-green-500'} onClick={handleState}> <span>EVENTS</span> </Link>
+        <Link href={'/contact'} className={pathname==='/contact'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-green-500':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-green-500'} onClick={handleState}><span>CONTACT </span> </Link>
         </ul>
 
         <button className={nav?'hamburger open flex flex-col md:hidden z-20 shadow-2xl focus:outline-none':'hamburger  flex flex-col md:hidden z-20 shadow-2xl focus:outline-none'} onClick={handleNav}>
-            <span className='bg-[#66b539] top'></span>
-            <span className='bg-[#66b539] middle'></span>
-            <span className='bg-[#66b539] bottom'></span>
+            <span className='bg-green-700 top'></span>
+            <span className='bg-green-700 middle'></span>
+            <span className='bg-green-700 bottom'></span>
         </button>
 
     </div>

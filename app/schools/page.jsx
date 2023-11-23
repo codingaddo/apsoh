@@ -4,7 +4,7 @@ import Head from '../components/Head'
 const page = () => {
   return (
     <div>
-        <Head text={'Schools And Levels'}/>
+        <Head text={'Enroll Now'} url={'/apply'}/>
     </div>
   )
 }

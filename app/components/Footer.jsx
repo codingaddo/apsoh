@@ -11,7 +11,7 @@ const Footer = () => {
     <div className='lastDiv text-center p-8 text-md md:text-2xl font-bold bg-[#e8f7ddaa]'>
         <p className=''>Need help? Call our award winning support team on +233 551 817 972</p>
       </div>
-    <footer className='flex  md:justify-between items-start md:items-center pt-16 pb-3 px-8 md:px-12 flex-col md:flex-row gap-10 bg-[#66b539]'>
+    <footer className='flex  md:justify-between items-start md:items-center pt-16 pb-3 px-8 md:px-12 flex-col md:flex-row gap-10 bg-green-700'>
             <div className='flex flex-col gap-5'>
 
             <h1>Logo</h1>

@@ -33,21 +33,21 @@ const about = () => {
     <div className='p-1 pt-10 sm:pt-10 md:p-10 flex  flex-col items-center'>
      
 
-        <div className='p-3 md:p-10'>
+        <div className='p-3 md:p-7'>
           <h2 className='text-3xl text-center md:text-left pb-5 font-bold text-slate-600'>Our Vision</h2>
           <p className='text-[1.05em] text-slate-600 text-justify'>
             African Preparatory School of Hope Academy is dedicated to improving the care and education of children . We believe that early childhood is a time of exploration and discovery. We know that young children learn by “hands on” experiences. Our staff is highly qualified to enhance each child’s growth and development in a stimulating atmosphere of warmth and understanding. Our ultimate goal is to allow each child to develop as an individual as well as part of a group in a happy, safe, and nurturing environment.
           </p>
         </div>
 
-      <div className='p-5 md:p-10'>
+      <div className='p-5 md:p-7'>
         <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600 '>Our Mission</h2>
         <p className='text-[1.05em] text-slate-600 text-justify' >
           At APSOH, we nurture a safe and supportive learning environment that promotes high academic and social achievement for all students. We meet the needs of all learners through meaningful instruction and work collaboratively with colleagues and parents to support student learning.
         </p>
       </div>
     
-    <div className='p-5 md:p-10 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10 md:gap-16'>
+    <div className='p-5 md:p-7 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10 md:gap-16'>
       <div className='list'>
         <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600'>Our Beliefs</h2>
         <ul>
@@ -68,9 +68,9 @@ const about = () => {
 
 
        <div className='grid sm:grid-cols-2 gap-10 md:grid-cols-3 my-16 p-5'>
-     <Cards text={'Safety First'} icon={<FaFirstAid className='text-lime-600 text-[80px]'/>} para={'Staff is First Aid and CPR Certified'}/>
-     <Cards text={'Curriculum'} icon={<GiGraduateCap className='text-lime-600 text-[80px]'/>} para={'At APSOH Academy, we utilize the HighReach Learning® curriculum and the Creative Curriculum to aid in the efficient advancement of our children.'}/>
-     <Cards text={'Hours'} icon={<GiAlarmClock className='text-lime-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
+     <Cards text={'Safety First'} icon={<FaFirstAid className='text-green-600 text-[80px]'/>} para={'Staff is First Aid and CPR Certified'}/>
+     <Cards text={'Curriculum'} icon={<GiGraduateCap className='text-green-600 text-[80px]'/>} para={'At APSOH Academy, we utilize the HighReach Learning® curriculum and the Creative Curriculum to aid in the efficient advancement of our children.'}/>
+     <Cards text={'Hours'} icon={<GiAlarmClock className='text-green-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
 
       </div>
       <DownloadForm className={'items-center'}/>

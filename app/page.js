@@ -22,9 +22,9 @@ export default function Home() {
     <>
         <div className='hidden backgroundImg flex-col md:flex-row md:flex justify-around bg-gradient-to-r from-green-200 to-slate-100 px-10 pt-32 pb-16 '>
         <div className='h-[350px] w-[350px] shadow-xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#f8f8f6] border-lime-500'>
-          <h2 className=' text-lime-600 text-4xl font-bold'>APSOH Academy</h2>
-          <p className='text-slate-500 text-xl'>Dedicated to improving Care and Education for Children</p>
-          <button className='bg-lime-500 animate-bounce hover:animate-none rounded-lg py-3 relative left-14 w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-lime-600 hover:shadow-2xl  ease duration-300'>
+          <h2 className=' text-green-700 text-4xl font-bold'>APSOH Academy</h2>
+          <p className='text-slate-700 text-xl'>Dedicated to improving Care and Education for Children</p>
+          <button className='bg-green-600 animate-bounce hover:animate-none rounded-lg py-3 relative left-14 w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-green-500 hover:shadow-2xl  ease duration-300'>
             <Link href='/apply'>ENROLL NOW</Link>
           </button>
         </div>

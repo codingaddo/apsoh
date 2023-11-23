@@ -21,11 +21,18 @@ const page = () => {
             <p className='text-[1.1em] text-slate-600 text-center md:text-justify'>
                 After completing the enrollment inquiry form, we will contact you to inform you of the enrollment. Our enrollment policy is a first come first serve basis (siblings do have priority). Depending on the wait list your child may start at the time you desire or you may have to wait before a space is available.
             </p>
+            <p className='text-[1.1em] text-slate-600 text-center md:text-justify'>
+                You can download and print the full enrollment form or visit the schools front desk to get the enrollment form. The form must be submitted to the admistration office.
+            </p>
             </div>
 
-          <DownloadForm className={'items-start'}/>
+          <div className='pt-10'>
+
+            <DownloadForm className={'items-start'}/>
+          </div>
           
         </div>
+        
     </div>
 
     </>
