@@ -1,11 +1,15 @@
-export const metadata={
-    title:'Levels and Schools|APSOH'
+export const metadata ={
+ title: 'Schools|APSOH',
+  description: 'A school website',
+
 }
 
 export default function Layout({children}){
     return(
-        <section>
-            {children}
-        </section>
+        <html>
+            <body>
+                {children}
+            </body>
+        </html>
     )
-}
+    }
