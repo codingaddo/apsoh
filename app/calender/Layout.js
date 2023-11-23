@@ -1,5 +1,5 @@
 export const metadata ={
-     title: 'Admissions|APSOH',
+     title: 'Calendar|APSOH',
   description: 'A school website',
 }
 

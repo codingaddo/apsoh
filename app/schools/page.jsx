@@ -3,8 +3,8 @@ import Head from '../components/Head'
 
 const page = () => {
   return (
-    <div className='h-[100vh]'>
-      <Head text={'Admission'}/>
+    <div>
+        <Head text={'Schools And Levels'}/>
     </div>
   )
 }

@@ -7,11 +7,9 @@ export const metadata ={
 
 export default function Layout({children}){
     return(
-        <html>
-            <body>
+            <section>
                 {children}
-            </body>
-        </html>
+            </section>
     )
 
 }
