@@ -9,9 +9,9 @@ import {usePathname} from 'next/navigation'
 const Navbar = () => {
     const [fixed,setFixed] = useState(false)
     const [nav,setNav]=useState(false)
-  const [isOpen1,setIsOpen1]=useState(false)
-  const [isOpen2,setIsOpen2]=useState(false)
-  const [isOpen3,setIsOpen3]=useState(false)
+    const [isOpen1,setIsOpen1]=useState(false)
+    const [isOpen2,setIsOpen2]=useState(false)
+    const [isOpen3,setIsOpen3]=useState(false)
     const [dropDown,setDropDown] = useState({
         about:false,
         academics:false,
@@ -118,7 +118,7 @@ const Navbar = () => {
                 <Link href={'/clubs'} className={pathname==='/clubs'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >CLUBS</Link>
                 <Link href={'/gallary'} className={pathname==='/gallary'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >GALLARY</Link>
                 <Link href={'/facilities'} className={pathname==='/facilities'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >FACILITIES</Link>
-                <Link href={'/ourculture'} className={pathname==='/ourculture'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >OUR CULTURE</Link>
+                <Link href={'/culture'} className={pathname==='/culture'?'text-center text-[.8rem] transition ease duration-300 hover:underline text-slate-400':'text-center text-[.8rem] transition ease duration-300 hover:underline'} onClick={()=>setDropDown(false)} >OUR CULTURE</Link>
             </div>
             }
         </li>
@@ -175,7 +175,7 @@ const Navbar = () => {
                 <Link href={'/gallary'} className={pathname==='/gallary'?' w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>GALLARY</Link>
                 <Link href={'/clubs'} className={pathname==='/clubs'?' w-full text-orange-500 pl-5  p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>CLUBS</Link>
                 <Link href={'/facilities'} className={pathname==='/facilities'?'w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>FACILITIES</Link>
-                <Link href={'/ourculture'} className={pathname==='/ourculture'?' w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>OUR CULTURE</Link>
+                <Link href={'/culture'} className={pathname==='/culture'?' w-full text-orange-500 pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400':' w-full pl-5 p-2 text-left text-sm  transition ease duration-300 hover:bg-slate-400'} onClick={closeAllDropdowns}>OUR CULTURE</Link>
 
             </div>
             }
