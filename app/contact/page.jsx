@@ -5,9 +5,19 @@ import contact from '../../public/assets/contact.svg'
 import Map from '../components/Map'
 import emailjs from '@emailjs/browser';
 
-const page = () => {
-    // const form = useRef()
+const Page = () => {
+    const form = useRef();
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        }
 
   return (
     <>
@@ -15,7 +25,7 @@ const page = () => {
     <div className='p-5 md:p-10 flex flex-col items-center md:items-start justify-around gap-5 md:flex-row'>
      <div className="container md:w-[40%]">
         <h2 className="heading text-2xl text-slate-600 font-medium ">Contact Us</h2>
-        <form action="" className="form w-[100%] ">
+        <form ref={form} className="form w-[100%] " onSubmit={sendEmail}>
             <div className="input-field">
                 <input id="username" name="user_name" type="text" autocomplete="off" required/>
                 <label for="username">Full Name</label>
@@ -41,7 +51,8 @@ const page = () => {
             </div>
             
             <div className="btn-container">
-                <button className="btn">Submit</button>
+                {/* <button className="btn">Submit</button> */}
+                <input type="submit" value="Send" className='btn' />
                 
             </div>
         </form>
@@ -62,4 +73,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
