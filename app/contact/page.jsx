@@ -11,7 +11,7 @@ const Page = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_ni0y8aa', 'template_dzppszu', form.current, 'seeiaV8SyEiXMPb_i')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -34,16 +34,16 @@ const Page = () => {
                 <input id="email" name="user_email" type="email" autocomplete="off" required/>
                 <label for="email">Email</label>
             </div>
-            <div className="input-field">
+            {/* <div className="input-field">
                 <input id="password" name="text" type="text" autocomplete="off" required/>
                 <label for="username">Phone</label>
                 
-            </div>
-            <div className="input-field">
+            </div> */}
+            {/* <div className="input-field">
                 <input id="password" name="text" type="text" autocomplete="off" required/>
                 <label for="username">Subject</label>
                 
-            </div>
+            </div> */}
             <div className="input-field">
                 <textarea id="password" name="message" type="text" autocomplete="off" required/>
                 <label for="username">Message</label>
