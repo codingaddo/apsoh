@@ -7,7 +7,7 @@ import svgs from './slidePics/svg'
 const FeesCard = ({text,url}) => {
     const [isShow, setIsShow] = useState(false)
   return (
-        <div className=' bg-slate-300 h-[400px] w-full md:w-[25vw] rounded-xl flex flex-col items-center gap-10 pt-8 shadow-xl hover:shadow-2xl '
+        <div className=' bg-slate-300 h-[480px] w-full md:w-[25vw] rounded-xl flex flex-col items-center gap-10 pt-8 shadow-xl hover:shadow-2xl '
         onMouseEnter={()=>setIsShow(true)} 
         onMouseLeave={()=>setIsShow(false)}
         >
@@ -18,7 +18,7 @@ const FeesCard = ({text,url}) => {
             width={150}
             />
             <div className='flex flex-col gap-5 bg-slate-50 w-full h-full text-center p-10 pt-16 '>
-            <h3 className='text-3xl text-green-600 '>
+            <h3 className='text-3xl text-green-600 text-center '>
                 {text}
             </h3>
             {

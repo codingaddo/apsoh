@@ -28,11 +28,11 @@ const page = () => {
         <h2 className="relative bottom-28 sm:bottom-48 md:bottom-48 font-bold text-[#f1f1f1] text-center  text-[3rem]">Fees</h2>
       </div>
       <div className=' p-5 py-5 md:p-24 rounded-b-xl md:bg-slate-100 grid  sm:grid-cols-2 md:grid-cols-3 gap-10 items-center'>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Pre-School'}/>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Nursery'}/>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Kindergarten'}/>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Primary Pupil'}/>
-            <FeesCard url={'/fees.pdf'} text={'JHS Students Fees'}/>
+            <FeesCard url={'/fees.pdf'} text={'Fees for Pre-School 2023/2024 Academic Year'}/>
+            <FeesCard url={'/fees.pdf'} text={'Fees for Nursery 2023/2024 Academic Year'}/>
+            <FeesCard url={'/fees.pdf'} text={'Fees for Kindergarten 2023/2024 Academic Year'}/>
+            <FeesCard url={'/fees.pdf'} text={'Fees for Primary Pupil 2023/2024 Academic Year'}/>
+            <FeesCard url={'/fees.pdf'} text={'JHS Students Fees 2023/2024 Academic Year'}/>
       </div>
     </div>
   )
