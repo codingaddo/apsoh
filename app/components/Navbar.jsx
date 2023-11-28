@@ -162,7 +162,7 @@ const Navbar = () => {
 
         {/* Responsive Navbar */}
        
-         <ul className={nav?'flex flex-col w-full h-[93vh] absolute top-[68px] shadow-xl left-0 z-20 py-10 pt-2  overflow-y-auto transition-all  ease-in duration-300 bg-[#ffffff]  gap-1 font-medium md:hidden':' overflow-y-auto flex flex-col absolute h-[93vh] top-[68px] -left-96 z-20 py-2 pt-1  transition-all  ease-in duration-300 bg-[#ffffff]   gap-1 font-medium md:hidden'}>
+         <ul className={nav?'flex flex-col w-full h-[93vh] absolute top-[68px] shadow-xl left-0 z-50 py-10 pt-2  overflow-y-auto transition-all  ease-in duration-300 bg-[#ffffff]  gap-1 font-medium md:hidden':' overflow-y-auto flex flex-col absolute h-[93vh] top-[68px] -left-96 z-20 py-2 pt-1  transition-all  ease-in duration-300 bg-[#ffffff]   gap-1 font-medium md:hidden'}>
         <Link href={'/'} className={pathname==='/'?'text-sm bg-slate-300 p-5 hover:bg-slate-200 text-green-500':'text-sm bg-slate-100 p-5 hover:bg-slate-300 text-green-500'} onClick={handleState}> <span>HOME</span></Link>
         <li className='w-full cursor-pointer transition ease duration-1000 focus:outline-none text-left text-green-500 ' onClick={toggleDropdown1}>
             <button className={` bg-slate-100 w-full p-5 flex  items-center justify-between text-sm transition ease duration-300 min-w-[120px]  md:px-4 hover:bg-slate-300`}>

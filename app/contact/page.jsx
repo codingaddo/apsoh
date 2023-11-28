@@ -11,12 +11,13 @@ const Page = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_ni0y8aa', 'template_dzppszu', form.current, 'seeiaV8SyEiXMPb_i')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+        // emailjs.sendForm('service_ni0y8aa', 'template_dzppszu', form.current, 'seeiaV8SyEiXMPb_i')
+        // .then((result) => {
+        //     console.log(result.text);
+        // }, (error) => {
+        //     console.log(error.text);
+        // });
+
         }
 
   return (

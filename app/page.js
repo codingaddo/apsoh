@@ -14,9 +14,20 @@ import Image from 'next/image'
 import {svgs} from './components/slidePics/svg'
 import Link from 'next/link'
 import DownloadForm from './components/DownloadForm'
+import { useState } from 'react'
 export const data = [pic1,pic2,pic3]
 
 export default function Home() {
+  const [isHover, setIsHover] = useState(false)
+  const handleHover = ()=>{
+    setIsHover(true)
+   }
+
+   const handleNotHover =()=>{
+    setIsHover(false)
+
+   }
+
   return (
 
     <>
@@ -64,9 +75,9 @@ export default function Home() {
 
     <main className="px-1 flex flex-col gap-14   py-10 md:px-10 bg-[#f8f8f6]">
      
-      <div className=''>
+      <div className='  ' onMouseEnter={handleHover} onMouseLeave={handleNotHover}>
 
-      <MyCarousel slidsToShow={1}>
+      <MyCarousel slidsToShow={1} isHover={isHover}>
          {
         data.map((item,index)=>{
           return(
@@ -115,11 +126,11 @@ export default function Home() {
       <Levels/>
       </div>
       
-       <div className='bg-[#f9f3d670] md:p-10 p-5 rounded-3xl'>
-        <MyCarousel>
-          <Testimonials name={'Addo'}/>
-        <Testimonials name={'Mike'}/>
-        <Testimonials name={'Jonas'}/>
+       <div className='bg-[#f9f3d670] md:p-10 p-5 rounded-3xl' onMouseEnter={handleHover} onMouseLeave={handleNotHover}>
+        <MyCarousel isHover={isHover}>
+          <Testimonials name={'Addo Michael'} stage={'JHS 1 Student'}/>
+        <Testimonials name={'Mike Sekyi'} stage={'Finale Year Student'}/>
+        <Testimonials name={'Jonas Lantam'} stage={'Parent'}/>
         </MyCarousel>
        </div>
       <DownloadForm className={'items-center'}/>
