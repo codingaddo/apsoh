@@ -39,7 +39,8 @@ const Gallary = ({pics}) => {
               src={pictures[slideNumber]}
               alt=''
               className='img'
-              loading="lazy"
+              // loading="lazy"
+              priority={true}
             />
           </div>
         </div>
@@ -52,7 +53,9 @@ const Gallary = ({pics}) => {
             src={picture} 
             alt='picture'
             className='img'
-            loading='lazy'
+            priority={true}
+            // loading='lazy'
+            
 
             />
          </div>))
