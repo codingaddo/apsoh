@@ -28,6 +28,7 @@ const FeesCard = ({text,url}) => {
             </Link>
             }
 
+
           </div>
 
         </div>
