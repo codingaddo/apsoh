@@ -14,11 +14,18 @@ import Image from 'next/image'
 import {svgs} from './components/slidePics/svg'
 import Link from 'next/link'
 import DownloadForm from './components/DownloadForm'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 export const data = [pic1,pic2,pic3]
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 export default function Home() {
   const [isHover, setIsHover] = useState(false)
+  useEffect(()=>{
+    Aos.init({duration:2000});
+  })
+
+
   const handleHover = ()=>{
     setIsHover(true)
    }
@@ -109,31 +116,44 @@ export default function Home() {
 
 
      
-      <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-28 space-y-5 md:space-y-16'>
+      <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-28 space-y-5 md:space-y-16' data-aos ='fade-up'>
       <h2 className='text-center text-[2em] md:text-4xl font-extrabold'><span className='text-[#069251d3]'>APSOH AT </span> <span className='text-[#043129f0]'>A GLANCE</span></h2>
         <div className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0'>
-        <Statistic icon={<FaUserGraduate/>} number={'50K+'} name={'Student'} className={'bg-[#9ed4cb57] p-7'} />
-        <Statistic icon={<ImLibrary/>} number={'10'} name={'Facilities'} className={'bg-[#f8e7987d] p-7 cursor-pointer'}  />
-        <Statistic icon={<BiChild/>} number={'8'} name={'Preschool Programs'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}/>
-        <Statistic icon={<FaBook/>} number={'15+'} name={'Basic Programs'} className={'bg-[#98f8c77d] p-7 cursor-pointer'}  />
-        <Statistic icon={<BsBookHalf/>} number={'18+'} name={'JHS Programs'} className={'bg-[#9ed4cb57] p-7 cursor-pointer'}  />
+    
+         <Statistic icon={<FaUserGraduate/>} number={'50'} plus={'k+'} name={'Student'} className={'bg-[#9ed4cb57] p-7'} />
+         
+        <Statistic icon={<ImLibrary/>} number={'10'} plus={'+'} name={'Facilities'} className={'bg-[#f8e7987d] p-7 cursor-pointer'}  />
+        <Statistic icon={<BiChild/>} number={'8'} plus={'+'} name={'Preschool Programs'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}/>
+        <Statistic icon={<FaBook/>} number={'15'} plus={'+'} name={'Basic Programs'} className={'bg-[#98f8c77d] p-7 cursor-pointer'}  />
+        <Statistic icon={<BsBookHalf/>} number={'18'} plus={'+'} name={'JHS Programs'} className={'bg-[#9ed4cb57] p-7 cursor-pointer'}  />
         <Link href={'/staff'}>
-           <Statistic icon={<BsFillPeopleFill/>} number={'240+'} name={'Staff'} className={'bg-[#cdd38770] p-7 cursor-pointer'}  />
+           <Statistic icon={<BsFillPeopleFill/>} number={'240'} name={'Staff'} className={'bg-[#cdd38770] p-7 cursor-pointer'}  />
         </Link>
         </div>
       </div>
-       <div className='md:p-10 p-5 rounded-3xl bg-[#f9f3d670]'>
+       <div 
+       className='md:p-10 p-5 rounded-3xl bg-[#f9f3d670]'
+        data-aos ='fade-right' 
+        >
       <Levels/>
       </div>
       
-       <div className='bg-[#f9f3d670] md:p-10 p-5 rounded-3xl' onMouseEnter={handleHover} onMouseLeave={handleNotHover}>
+       <div 
+       className='bg-[#f9f3d670] md:p-10 p-5 rounded-3xl'
+        onMouseEnter={handleHover}
+         onMouseLeave={handleNotHover}
+         data-aos ='zoom-in'
+         >
         <MyCarousel isHover={isHover}>
           <Testimonials name={'Addo Michael'} stage={'JHS 1 Student'}/>
         <Testimonials name={'Mike Sekyi'} stage={'Finale Year Student'}/>
         <Testimonials name={'Jonas Lantam'} stage={'Parent'}/>
         </MyCarousel>
        </div>
-      <DownloadForm className={'items-center'}/>
+       <div data-aos='zoom-in'>
+
+      <DownloadForm className={'items-center'} />
+       </div>
       
     </main>
     </>
