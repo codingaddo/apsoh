@@ -15,6 +15,7 @@ const Search = ({className}) => {
     if (searchTerm.trim() !== '') {
       router.push(`${encodeURIComponent(searchTerm).toLowerCase()}`);
     } 
+    setSearchTerm('')
 
     }
    

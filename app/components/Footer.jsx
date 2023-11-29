@@ -19,7 +19,7 @@ const Footer = () => {
          
           <Search/>
 
-          <Socials className={'hidden md:flex gap-3'} iconStyles={'p-4'}/>
+          <Socials className={'hidden md:flex gap-2'} iconStyles={'p-3 text-white text-xl font-thin rounded-xl'}/>
 
 
             <p className='text-md text-[#f1f1f1]'>{<span>&copy; {new Date().getFullYear()}</span>} | All rights reserved</p>
@@ -28,7 +28,7 @@ const Footer = () => {
 
 
 
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3 '>
                 <div className='flex flex-col gap-3'>
                     <h3 className='text-2xl font-bold text-[#FEEFE5]'>Academics</h3>
                     <Link href={'/fees'} className='text-[#f1f1f1] text-md font-md hover:underline'>Fees</Link>

@@ -107,7 +107,7 @@ const Navbar = () => {
         </Link>
 
 
-           <li className= {pathname==='/about'||pathname==='/gallary'|| pathname==='/clubs'?'rounded-t-lg cursor-pointer transition ease  bg-[#c5efbd] hover:bg-[#c5efbd]':'rounded-t-lg cursor-pointer transition ease  hover:bg-[#c5efbd]'} onMouseEnter={()=>toggleDropdowna('about')} onMouseLeave={()=>setDropDown(false)}>
+           <li className= {pathname==='/about'||pathname==='/gallary'|| pathname==='/clubs' || pathname==='/facilities' || pathname==='/culture'?'rounded-t-lg cursor-pointer transition ease  bg-[#c5efbd] hover:bg-[#c5efbd]':'rounded-t-lg cursor-pointer transition ease  hover:bg-[#c5efbd]'} onMouseEnter={()=>toggleDropdowna('about')} onMouseLeave={()=>setDropDown(false)}>
             <button className={` flex items-center  text-sm transition ease duration-300 py-2 px-2`}>
                 ABOUT APSOH {dropDown.about?<FaAngleUp className='text-sm'/>:<FaAngleDown className='text-sm'/>}
             </button>

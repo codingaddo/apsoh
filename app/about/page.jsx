@@ -4,7 +4,6 @@ import Image from 'next/image';
 import {FaFirstAid} from 'react-icons/fa'
 import {GiGraduateCap, GiAlarmClock} from 'react-icons/gi'
 import Cards from '../components/Cards';
-import Link from 'next/link';
 import DownloadForm from '../components/DownloadForm';
 
 const about = () => {

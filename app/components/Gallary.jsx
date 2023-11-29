@@ -39,6 +39,7 @@ const Gallary = ({pics}) => {
               src={pictures[slideNumber]}
               alt=''
               className='img'
+              placeholder='blur'
               // loading="lazy"
               priority={true}
             />
@@ -54,11 +55,13 @@ const Gallary = ({pics}) => {
             alt='picture'
             className='img'
             priority={true}
+            placeholder='blur'
             // loading='lazy'
             
-
             />
-         </div>))
+
+         </div>
+         ))
         }
       </div>
      
