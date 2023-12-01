@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import {svgs} from '../components/slidePics/svg'
 import Image from 'next/image';
 import {FaFirstAid} from 'react-icons/fa'
@@ -72,14 +72,14 @@ const About = () => {
       />
       
       </div>
-
-
-       <div className='grid sm:grid-cols-2 gap-10 md:grid-cols-3 my-16 p-5'>
+       <div className='grid sm:grid-cols-2 gap-10 md:grid-cols-3 my-16 p-5' data-aos = 'flip-down'>
      <Cards text={'Safety First'} icon={<FaFirstAid className='text-green-600 text-[80px]'/>} para={'Staff is First Aid and CPR Certified'}/>
      <Cards text={'Curriculum'} icon={<GiGraduateCap className='text-green-600 text-[80px]'/>} para={'At APSOH Academy, we utilize the HighReach Learning® curriculum and the Creative Curriculum to aid in the efficient advancement of our children.'}/>
      <Cards text={'Hours'} icon={<GiAlarmClock className='text-green-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
 
-      </div>
+
+  </div>
+
       <DownloadForm className={'items-center'}/>
     </div>
     </>

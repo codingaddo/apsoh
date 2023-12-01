@@ -16,6 +16,7 @@ import Link from 'next/link'
 import DownloadForm from './components/DownloadForm'
 import { useEffect, useState } from 'react'
 export const data = [pic1,pic2,pic3]
+import kids from '../public/assets/kids.webp'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -58,11 +59,14 @@ export default function Home() {
       </div>
 
 
-        <div className='block md:hidden h-[50vw] md:h-[30vw] w-full relative bg-[#0000005f]'>
+        <div className='block md:hidden h-[50vw] md:h-[30vw] w-full relative'>
+          <div>
+
+    
         <Image
-          src={svgs[1]}
+          src={kids}
           alt=''
-          loading='lazy'
+          priority = {true}
            style={{
               width:"100%",
               height:"100%",
@@ -74,8 +78,9 @@ export default function Home() {
 
            }}
         />
+              </div>
        
-        <div className="relative bottom-40 md:bottom-66 font-extrabold text-[#f1f1f1] text-center  text-4xl">
+        <div className="relative bottom-60 md:bottom-66 font-extrabold text-[#f1f1f1] text-center  text-4xl">
           <h1 className='font-bold'>Welcome to African Preparatory School of Hope</h1>
         </div>
       </div>
@@ -118,7 +123,10 @@ export default function Home() {
      
       <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-16 space-y-5 md:space-y-10' >
       <h2 className='text-center text-[2em] md:text-4xl font-extrabold'><span className='text-[#069251d3]'>APSOH AT </span> <span className='text-[#043129f0]'>A GLANCE</span></h2>
-        <div className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0' data-aos ='zoom-in'>
+        <div 
+         className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0' 
+          data-aos="zoom-in"
+         >
     
          <Statistic icon={<FaUserGraduate/>} number={'50'} plus={'k+'} name={'Student'} className={'bg-[#9ed4cb57] p-7'} />
          
