@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import {svgs} from '../components/slidePics/svg'
 import Image from 'next/image';
@@ -5,8 +6,15 @@ import {FaFirstAid} from 'react-icons/fa'
 import {GiGraduateCap, GiAlarmClock} from 'react-icons/gi'
 import Cards from '../components/Cards';
 import DownloadForm from '../components/DownloadForm';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
-const about = () => {
+const About = () => {
+  useEffect(()=>{
+    Aos.init()
+  })
+ 
+
   return (
     <>
       <div className='h-[40vw] md:h-[30vw] w-full relative bg-[#0000005f]'>
@@ -77,4 +85,4 @@ const about = () => {
     </>
   )
 }
-export default about;
+export default About;

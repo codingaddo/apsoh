@@ -116,9 +116,9 @@ export default function Home() {
 
 
      
-      <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-28 space-y-5 md:space-y-16' data-aos ='fade-up'>
+      <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-16 space-y-5 md:space-y-10' >
       <h2 className='text-center text-[2em] md:text-4xl font-extrabold'><span className='text-[#069251d3]'>APSOH AT </span> <span className='text-[#043129f0]'>A GLANCE</span></h2>
-        <div className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0'>
+        <div className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0' data-aos ='zoom-in'>
     
          <Statistic icon={<FaUserGraduate/>} number={'50'} plus={'k+'} name={'Student'} className={'bg-[#9ed4cb57] p-7'} />
          
@@ -133,24 +133,28 @@ export default function Home() {
       </div>
        <div 
        className='md:p-10 p-5 rounded-3xl bg-[#f9f3d670]'
-        data-aos ='fade-right' 
         >
-      <Levels/>
+        
+          <div data-aos ='zoom-in'>
+            <Levels/>
+          </div>
       </div>
       
        <div 
        className='bg-[#f9f3d670] md:p-10 p-5 rounded-3xl'
         onMouseEnter={handleHover}
          onMouseLeave={handleNotHover}
-         data-aos ='zoom-in'
          >
-        <MyCarousel isHover={isHover}>
-          <Testimonials name={'Addo Michael'} stage={'JHS 1 Student'}/>
-        <Testimonials name={'Mike Sekyi'} stage={'Finale Year Student'}/>
-        <Testimonials name={'Jonas Lantam'} stage={'Parent'}/>
-        </MyCarousel>
+          <div data-aos ='zoom-in'>
+          <MyCarousel isHover={isHover}>
+            <Testimonials name={'Addo Michael'} stage={'JHS 1 Student'}/>
+          <Testimonials name={'Mike Sekyi'} stage={'Finale Year Student'}/>
+          <Testimonials name={'Jonas Lantam'} stage={'Parent'}/>
+          </MyCarousel>
+
+          </div>
        </div>
-       <div data-aos='zoom-in'>
+       <div>
 
       <DownloadForm className={'items-center'} />
        </div>
