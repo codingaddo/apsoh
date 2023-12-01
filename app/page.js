@@ -39,7 +39,7 @@ export default function Home() {
   return (
 
     <>
-        <div className='hidden backgroundImg flex-col md:flex-row md:flex justify-around bg-gradient-to-r from-green-200 to-slate-100 px-10 pt-32 pb-16 '>
+        {/* <div className='hidden backgroundImg flex-col md:flex-row md:flex justify-around bg-gradient-to-r from-green-200 to-slate-100 px-10 pt-32 pb-16 '>
         <div className='h-[350px] w-[350px] shadow-xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#f8f8f6] border-lime-500'>
           <h2 className=' text-green-700 text-4xl font-bold'>APSOH Academy</h2>
           <p className='text-slate-700 text-xl'>Dedicated to improving Care and Education for Children</p>
@@ -56,10 +56,10 @@ export default function Home() {
         // className='hidden md:block'
         />
 
-      </div>
+      </div> */}
 
 
-        <div className='block md:hidden h-[50vw] md:h-[30vw] w-full relative'>
+        {/* <div className='block md:hidden h-[50vw] md:h-[30vw] w-full relative'>
           <div>
 
     
@@ -82,6 +82,25 @@ export default function Home() {
        
         <div className="relative bottom-60 md:bottom-66 font-extrabold text-[#f1f1f1] text-center  text-4xl">
           <h1 className='font-bold'>Welcome to African Preparatory School of Hope</h1>
+        </div>
+      </div> */}
+
+      <div className='relative w-full py-24'>
+        <div className='absolute top-0 -z-10 w-full'>
+          <Image
+          src={kids}
+          alt='background-image'
+          width={1500}
+          className='w-full'
+          />
+        </div>
+
+         <div className=' relative opacity-[0.5] md:left-24 h-[350px] w-[400px] shadow-xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#3ecf3e] border-lime-500'>
+          <h2 className=' text-green-700 text-4xl font-bold'>APSOH Academy</h2>
+          <p className='text-slate-700 text-xl'>Dedicated to improving Care and Education for Children</p>
+          <button className='bg-green-600 animate-bounce hover:animate-none rounded-lg py-3 relative left-14 w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-green-500 hover:shadow-2xl  ease duration-300'>
+            <Link href='/apply'>ENROLL NOW</Link>
+          </button>
         </div>
       </div>
 
