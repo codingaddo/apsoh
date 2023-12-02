@@ -85,20 +85,20 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div className='relative w-full py-24'>
+      <div className='relative w-full md:py-24 sm:pt-24'>
         <div className='absolute top-0 -z-10 w-full'>
           <Image
           src={kids}
           alt='background-image'
           width={1500}
-          className='w-full'
+          className='w-full '
           />
         </div>
 
-         <div className=' relative opacity-[0.5] md:left-24 h-[350px] w-[400px] shadow-xl px-10  text-center flex  flex-col justify-center gap-5 rounded-tl-3xl rounded-br-3xl bg-[#3ecf3e] border-lime-500'>
-          <h2 className=' text-green-700 text-4xl font-bold'>APSOH Academy</h2>
-          <p className='text-slate-700 text-xl'>Dedicated to improving Care and Education for Children</p>
-          <button className='bg-green-600 animate-bounce hover:animate-none rounded-lg py-3 relative left-14 w-40 font-bold shadow-sm text-xl text-[#f8f8f6] hover:bg-green-500 hover:shadow-2xl  ease duration-300'>
+         <div className='md:relative md:top-10 left-5 opacity-[0.8] md:rounded-2xl md:left-24 h-[60vw] md:h-[350px] w-[100vw] md:w-[500px] shadow-xl md:px-10  text-center flex  flex-col justify-center items-center gap-5  bg-[#1fba2e] border-lime-500'>
+          <h2 className=' text-white text-4xl font-bold'>APSOH Academy</h2>
+          <p className=' text-white text-xl px-2 md:px-0'>Dedicated to improving Care and Education for Children</p>
+          <button className='bg-white md:animate-pulse hover:animate-none rounded-lg py-3  w-40 font-bold shadow-sm text-xl text-[#1fba2e] hover:scale-[1.2] hover:shadow-2xl  ease duration-300'>
             <Link href='/apply'>ENROLL NOW</Link>
           </button>
         </div>
