@@ -13,7 +13,7 @@ import Provider from './context/Provider'
 
  const metadata = {
   title: 'APSOH',
-  description: 'The official school website',
+  description: 'African Preparatory School of Hope',
 }
 
 export default function RootLayout({ children}) {
