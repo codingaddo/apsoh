@@ -6,6 +6,7 @@ import TopNavbar from './components/TopNavbar'
 import styles from './styles/mouseanime.module.css'
 import './globals.css'
 import BackToTop from './components/BackToTop'
+import Provider from './context/Provider'
 // import { Inter } from 'next/font/google'
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -29,7 +30,7 @@ export default function RootLayout({ children}) {
   return (
     <html lang="en">
       <body className={''}>
-          
+        <Provider>
        <div ref={mousePointer} className={styles.mouseMove}></div>
 
         <TopNavbar/>
@@ -37,6 +38,9 @@ export default function RootLayout({ children}) {
         <BackToTop/>
         {children}
         <Footer/>
+
+        </Provider>
+          
         </body>
     </html>
   )

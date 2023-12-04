@@ -85,8 +85,8 @@ export default function Home() {
         </div>
       </div> */}
 
-      <div className='relative w-full md:py-24 sm:pt-24'>
-        <div className='absolute top-0 -z-10 w-full'>
+      <div className='relative w-full md:py-24 sm:pt-0'>
+        <div className='absolute md:top-0 -z-10 w-full'>
           <Image
           src={kids}
           alt='background-image'
@@ -95,7 +95,7 @@ export default function Home() {
           />
         </div>
 
-         <div className='md:relative md:top-10 left-5 opacity-[0.8] md:rounded-2xl md:left-24 h-[60vw] md:h-[350px] w-[100vw] md:w-[500px] shadow-xl md:px-10  text-center flex  flex-col justify-center items-center gap-5  bg-[#1fba2e] border-lime-500'>
+         <div className='md:relative md:top-10 left-5 opacity-[0.75] md:rounded-2xl md:left-24 h-[60vw] md:h-[350px] w-[100vw] md:w-[500px] shadow-xl md:px-10  text-center flex  flex-col justify-center items-center gap-5  bg-[#1fba2e] border-lime-500'>
           <h2 className=' text-white text-4xl font-bold'>APSOH Academy</h2>
           <p className=' text-white text-xl px-2 md:px-0'>Dedicated to improving Care and Education for Children</p>
           <button className='bg-white md:animate-pulse hover:animate-none rounded-lg py-3  w-40 font-bold shadow-sm text-xl text-[#1fba2e] hover:scale-[1.2] hover:shadow-2xl  ease duration-300'>
@@ -143,7 +143,7 @@ export default function Home() {
       <div className='bg-green-100 rounded-3xl py-7 px-5 md:p-16 space-y-5 md:space-y-10' >
       <h2 className='text-center text-[2em] md:text-4xl font-extrabold'><span className='text-[#069251d3]'>APSOH AT </span> <span className='text-[#043129f0]'>A GLANCE</span></h2>
         <div 
-         className='grid sm:grid-cols-2 md:grid md:grid-cols-3 gap-x-0 gap-y-0' 
+         className='grid sm:grid-cols-2  md:grid-cols-3 gap-x-0 gap-y-0' 
           data-aos="zoom-in"
          >
     
@@ -151,7 +151,7 @@ export default function Home() {
          
         <Statistic icon={<ImLibrary/>} number={'10'} plus={'+'} name={'Facilities'} className={'bg-[#f8e7987d] p-7 cursor-pointer'}  />
         <Statistic icon={<BiChild/>} number={'8'} plus={'+'} name={'Preschool Programs'} className={'bg-[#f5ebc070] p-7 cursor-pointer'}/>
-        <Statistic icon={<FaBook/>} number={'15'} plus={'+'} name={'Basic Programs'} className={'bg-[#98f8c77d] p-7 cursor-pointer'}  />
+        <Statistic icon={<FaBook/>} number={'15'} plus={'+'} name={'Primary Programs'} className={'bg-[#98f8c77d] p-7 cursor-pointer'}  />
         <Statistic icon={<BsBookHalf/>} number={'18'} plus={'+'} name={'JHS Programs'} className={'bg-[#9ed4cb57] p-7 cursor-pointer'}  />
         <Link href={'/staff'}>
            <Statistic icon={<BsFillPeopleFill/>} number={'240'} name={'Staff'} className={'bg-[#cdd38770] p-7 cursor-pointer'}  />
