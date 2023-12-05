@@ -1,13 +1,15 @@
 'use client'
 import React, { useEffect } from 'react'
-import {svgs} from '../components/slidePics/svg'
 import Image from 'next/image';
-import {FaFirstAid} from 'react-icons/fa'
-import {GiGraduateCap, GiAlarmClock} from 'react-icons/gi'
+import director from '../../public/assets/Florence-Adjepong.jpg'
+import { FaHandsHoldingChild } from "react-icons/fa6";
+import {GiGraduateCap} from 'react-icons/gi'
+import { IoTelescope } from "react-icons/io5";
 import Cards from '../components/Cards';
 import DownloadForm from '../components/DownloadForm';
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Directors from '../components/Directors';
 
 const About = () => {
   useEffect(()=>{
@@ -17,71 +19,112 @@ const About = () => {
 
   return (
     <>
-      <div className='h-[40vw] md:h-[30vw] w-full relative bg-[#0000005f]'>
-        <Image
-          src={svgs[1]}
-          alt=''
-        //  loading='lazy'
-         priority
-
-           style={{
-              width:"100%",
-              height:"100%",
-              zIndex: "-40",
-              position: "relative",
-              backgroundColor:"white",
-              objectFit:'contain',
-              paddingTop:'5px'
-
-           }}
-        />
-        <h2 className="relative bottom-28 md:bottom-60 font-extrabold text-[#f1f1f1] text-center  text-4xl">About Us</h2>
-      </div>
-    <div className='p-1 pt-10 sm:pt-10 md:p-10 flex  flex-col items-center'>
-     
-
-        <div className='p-3 md:p-7'>
-          <h2 className='text-3xl text-center md:text-left pb-5 font-bold text-slate-600'>Our Vision</h2>
-          <p className='text-[1.05em] text-slate-600 text-justify'>
-            African Preparatory School of Hope Academy is dedicated to improving the care and education of children . We believe that early childhood is a time of exploration and discovery. We know that young children learn by “hands on” experiences. Our staff is highly qualified to enhance each child’s growth and development in a stimulating atmosphere of warmth and understanding. Our ultimate goal is to allow each child to develop as an individual as well as part of a group in a happy, safe, and nurturing environment.
-          </p>
-        </div>
-
-      <div className='p-5 md:p-7'>
-        <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600 '>Our Mission</h2>
-        <p className='text-[1.05em] text-slate-600 text-justify' >
-          At APSOH, we nurture a safe and supportive learning environment that promotes high academic and social achievement for all students. We meet the needs of all learners through meaningful instruction and work collaboratively with colleagues and parents to support student learning.
-        </p>
-      </div>
     
-    <div className='p-5 md:p-7 flex flex-col-reverse md:flex-row items-center md:items-start justify-between gap-10 md:gap-16'>
-      <div className='list'>
-        <h2 className='text-3xl text-center md:text-left pb-3 font-bold text-slate-600'>Our Beliefs</h2>
-        <ul>
-          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1em]'>Students engage in purposeful learning and authentic delivery.</li></div>
-          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1em]'>Staff members set and hold high expectations for all students.</li></div>
-          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1em]'>Our school community respects and embraces our diversity.</li></div>
-          <div className='flex'><span className='text-xl pr-2 text-slate-600'>👉</span><li className='pb-2 text-[1em]'>Our Home-School partnership thrives with ongoing communication and parent participation.</li></div>
-        </ul>
-      </div>
-
-      <Image
-        src={svgs[1]}
-        alt=''
-        width={340}
-      />
+    <div className='p-1 pt-10 sm:pt-10 md:p-10 flex  flex-col items-center'>
       
+    <h1 className='uppercase text-xl font-bold text-slate-600 '>about us</h1>
+    <div className='flex flex-col md:flex-row items-center md:items-stretch justify-center  md:justify-between gap-5 md:gap-16 pb-16'>
+      <div className='w-3/3 rounded-2xl pt-7 md:pt-14 ' data-aos='flip-right' data-aos-duration='1000'>
+        <h1 className='md:hidden text-4xl font-bold text-green-600 text-center pb-5 '>Welcome</h1>
+
+        <Image
+          src={director}
+          alt='Director'
+          width={''}
+          height={''}
+          priority={true}
+          placeholder='blur'
+          className='rounded-2xl w-[550px] h-[400px] shadow-2xl'
+        />
       </div>
-       <div className='grid sm:grid-cols-2 gap-10 md:grid-cols-3 my-16 p-5' data-aos = 'flip-down'>
-     <Cards text={'Safety First'} icon={<FaFirstAid className='text-green-600 text-[80px]'/>} para={'Staff is First Aid and CPR Certified'}/>
-     <Cards text={'Curriculum'} icon={<GiGraduateCap className='text-green-600 text-[80px]'/>} para={'At APSOH Academy, we utilize the HighReach Learning® curriculum and the Creative Curriculum to aid in the efficient advancement of our children.'}/>
-     <Cards text={'Hours'} icon={<GiAlarmClock className='text-green-600 text-[80px]'/>} para={'We are open weekdays 6:30 AM to 6:30 PM'}/>
-
-
-  </div>
-
-      <DownloadForm className={'items-center'}/>
+      <div className='p-5 md:w-2/3 text-justify '>
+        <h1 className='hidden md:inline-block text-4xl font-bold text-green-600 py-4'>Welcome</h1>
+        <div className='flex flex-col gap-3'>
+        <p className=' text-[1.05em] text-gray-500 md:leading-8 leading-6'>
+          Alpha Beta Education Centres is a co-education international school based in Accra and open to children aged 18 months to 18 years.
+        </p>
+        <p className=' text-[1.05em] text-gray-500 md:leading-8 leading-6'>
+          It was founded by Rev. Samuel and Florence Adjepong who relocated from the UK in 1986. The school began with six children, ages two to three years under the carport of their home in Dansoman in September 1988, and so it was that the Alpha Beta Montessori Learning Centre took off. The success of the pre-school resulted in the setting up of the Kindergarten in 1991 which was followed by the start of the first phase of Alpha Beta Primary and Junior Secondary School in 1992.
+        </p>
+        <p className=' text-[1.05em] text-gray-500 md:leading-8 leading-6'>
+          Today, Alpha Beta is one of the top private schools in Ghana, with a student and staff body of over 800 individuals, and offering an enriched British curriculum with a distinct focus on entrepreneurial leadership from the Primary level. The school building is also a landmark edifice prominently situated on the Dansoman High Street. Alpha Beta continues to expand its physical infrastructure.
+        </p>
+        </div>
+      </div>
     </div>
+
+    <div className='flex flex-col md:flex-row gap-16 p-5 md:p-1 mb-24'>
+       <Cards
+        text={'Mission'} 
+        icon={<IoTelescope className='text-green-500 text-[80px]'/>} 
+        para={'To expose students to an enriched teaching and learning environment which promotes knowledge, Christian values and service to others.'}
+        hstyle={'text-green-700 text-4xl font-bold'}
+         pstyle={'leading-7 text-[1.07em]'}
+         width={'[35vw]'}
+
+        />
+     <Cards
+      text={'Vision'}
+       icon={<GiGraduateCap className='text-green-500 text-[80px]'/>} 
+       para={'To raise leaders of tomorrow who shall be part of the solution to Africa’s developmental challenges.'}
+       hstyle={'text-green-700 text-4xl font-bold'}
+       pstyle={'leading-7 text-[1.07em]'}
+       width={'[35vw]'}
+       />
+    </div>
+
+    <div className='p-5'>
+      <h1 className='text-4xl text-green-600 font-bold text-center md:text-start pb-5'>Core Values in Action</h1>
+      <div className='py-5  grid  grid-cols-2 md:grid-cols-3 gap-10 items-center'>
+        <Cards width={'[25vw]'}
+         icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+         text={'Services'}
+         para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
+         pstyle={'leading-7 text-[1.07em]'}
+         hstyle={'text-green-700 text-4xl font-bold'}
+
+         />
+        <Cards width={'[25vw]'}
+           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+         text={'Discipline'}
+         para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
+         pstyle={'leading-7 text-[1.07em]'}
+         hstyle={'text-green-700 text-4xl font-bold'}
+        />
+        <Cards width={'[25vw]'}
+           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+         text={'Integrity'}
+         para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
+         pstyle={'leading-7 text-[1.07em]'}
+         hstyle={'text-green-700 text-4xl font-bold'}
+        />
+        <Cards width={'[25vw]'}
+           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+         text={'Excellence'}
+         para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
+         pstyle={'leading-7 text-[1.07em]'}
+         hstyle={'text-green-700 text-4xl font-bold'}
+        />
+        <Cards width={'[25vw]'}
+           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+         text={'Leadership'}
+         para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
+         pstyle={'leading-7 text-[1.07em]'}
+         hstyle={'text-green-700 text-4xl font-bold'}
+        />
+        <Cards width={'[25vw]'}
+           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+         text={'Hard work'}
+         para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
+         pstyle={'leading-7 text-[1.07em]'}
+         hstyle={'text-green-700 text-4xl font-bold'}
+        />
+      </div>
+    </div>
+
+    </div>
+    <Directors/>
+      <DownloadForm className={'items-center'}/>
     </>
   )
 }
