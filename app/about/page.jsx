@@ -75,7 +75,7 @@ const About = () => {
 
     <div className='p-5'>
       <h1 className='text-4xl text-green-600 font-bold text-center md:text-start pb-5'>Core Values in Action</h1>
-      <div className='py-5  grid  grid-cols-2 md:grid-cols-3 gap-10 items-center'>
+      <div className='py-5  grid  sm:grid-cols-2 md:grid-cols-3 gap-10 items-center'>
         <Cards width={'[25vw]'}
          icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
          text={'Services'}
