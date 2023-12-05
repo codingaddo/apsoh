@@ -24,7 +24,7 @@ const About = () => {
       
     <h1 className='uppercase text-xl font-bold text-slate-600 '>about us</h1>
     <div className='flex flex-col md:flex-row items-center md:items-stretch justify-center  md:justify-between gap-5 md:gap-16 pb-16'>
-      <div className='w-3/3 rounded-2xl pt-7 md:pt-14 ' data-aos='flip-right' data-aos-duration='1000'>
+      <div className='w-3/3 rounded-2xl pt-7 md:pt-14 ' data-aos='flip-right' data-aos-duration='1000' >
         <h1 className='md:hidden text-4xl font-bold text-green-600 text-center pb-5 '>Welcome</h1>
 
         <Image
@@ -61,6 +61,7 @@ const About = () => {
         hstyle={'text-green-700 text-4xl font-bold'}
          pstyle={'leading-7 text-[1.07em]'}
          width={'[35vw]'}
+         animation={'fade-right'}
 
         />
      <Cards
@@ -70,6 +71,8 @@ const About = () => {
        hstyle={'text-green-700 text-4xl font-bold'}
        pstyle={'leading-7 text-[1.07em]'}
        width={'[35vw]'}
+       animation={'fade-left'}
+
        />
     </div>
 
@@ -82,6 +85,7 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
+         animation={'flip-right'}
 
          />
         <Cards width={'[25vw]'}
@@ -90,6 +94,8 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
+         animation={'zoom-in'}
+         duration={'1000'}
         />
         <Cards width={'[25vw]'}
            icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
@@ -97,6 +103,9 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
+         animation={'flip-left'}
+         duration={'2000'}
+
         />
         <Cards width={'[25vw]'}
            icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
@@ -104,6 +113,8 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
+         animation={'fade-right'}
+
         />
         <Cards width={'[25vw]'}
            icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
@@ -111,6 +122,9 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
+         animation={'fade-down'}
+         duration={'1000'}
+
         />
         <Cards width={'[25vw]'}
            icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
@@ -118,12 +132,16 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
+          animation={'fade-left'}
+         duration={'2000'}
         />
       </div>
     </div>
 
     </div>
-    <Directors/>
+    <div data-aos='zoom-in'>
+      <Directors/>
+    </div>
       <DownloadForm className={'items-center'}/>
     </>
   )

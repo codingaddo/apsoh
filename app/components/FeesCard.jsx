@@ -1,15 +1,25 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import svgs from './slidePics/svg'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
-const FeesCard = ({text,url}) => {
+const FeesCard = ({text,url,animation,duration}) => {
     const [isShow, setIsShow] = useState(false)
+
+      useEffect(()=>{
+    Aos.init()
+  })
+
   return (
         <div className=' bg-slate-300 h-[480px] w-full md:w-[25vw] rounded-xl flex flex-col items-center gap-10 pt-8 shadow-xl hover:shadow-2xl '
         onMouseEnter={()=>setIsShow(true)} 
         onMouseLeave={()=>setIsShow(false)}
+        data-aos = {animation}
+        data-aos-duration={duration}
+        
         >
             <Image
             src={svgs[3]}

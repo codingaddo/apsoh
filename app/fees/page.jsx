@@ -28,11 +28,42 @@ const page = () => {
       </div>
 
       <div className='w-full p-5 py-5 md:p-24 rounded-b-xl md:bg-slate-100 grid  sm:grid-cols-2 md:grid-cols-3 gap-10 items-center'>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Pre-School 2023/2024 Academic Year'}/>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Nursery 2023/2024 Academic Year'}/>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Kindergarten 2023/2024 Academic Year'}/>
-            <FeesCard url={'/fees.pdf'} text={'Fees for Primary Pupil 2023/2024 Academic Year'}/>
-            <FeesCard url={'/fees.pdf'} text={'JHS Students Fees 2023/2024 Academic Year'}/>
+            <FeesCard 
+            url={'/fees.pdf'} 
+            text={'Fees for Pre-School 2023/2024 Academic Year'}
+            animation={'fade-right'}
+            duration={'2000'}
+
+
+            />
+            <FeesCard 
+            url={'/fees.pdf'} 
+            text={'Fees for Nursery 2023/2024 Academic Year'}
+             animation={'fade-left'}
+            duration={'2000'}
+
+
+            />
+            <FeesCard
+             url={'/fees.pdf'} 
+             text={'Fees for Kindergarten 2023/2024 Academic Year'}
+         animation={'flip-right'}
+            duration={'2000'}
+
+
+             />
+            <FeesCard
+             url={'/fees.pdf'}
+              text={'Fees for Primary Pupil 2023/2024 Academic Year'}
+              animation={'zoom-in'}
+         duration={'1000'}
+              />
+            <FeesCard 
+            url={'/fees.pdf'} 
+            text={'JHS Students Fees 2023/2024 Academic Year'}
+             animation={'flip-left'}
+            duration={'2000'}
+            />
       </div>
 
 
