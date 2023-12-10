@@ -119,7 +119,7 @@ export default function Home() {
                  <Image
               src={item}
               alt='news'
-              loading='lazy'
+              priority={true}
               style={{
                 width:'1000px',
                 height:'420px',

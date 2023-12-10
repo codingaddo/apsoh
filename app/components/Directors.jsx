@@ -63,8 +63,8 @@ const Directors = () => {
               <div>
                  <Image
               src={item.img}
-              alt='news'
-              loading='lazy'
+              alt={item.name}
+              priority ={true}
               style={{
                 borderRadius:'15px'
               }}
