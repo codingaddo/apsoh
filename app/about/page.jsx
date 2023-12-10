@@ -2,9 +2,10 @@
 import React, { useEffect } from 'react'
 import Image from 'next/image';
 import director from '../../public/assets/Florence-Adjepong.jpg'
-import { FaHandsHoldingChild } from "react-icons/fa6";
+import { FaHandsHoldingChild, FaMedal, FaClock, FaNetworkWired, FaPeopleGroup } from "react-icons/fa6";
 import {GiGraduateCap} from 'react-icons/gi'
 import { IoTelescope } from "react-icons/io5";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
 import Cards from '../components/Cards';
 import DownloadForm from '../components/DownloadForm';
 import Aos from 'aos'
@@ -89,7 +90,7 @@ const About = () => {
 
          />
         <Cards width={'[25vw]'}
-           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+           icon={<FaClock className='text-green-500 text-[80px]' />}
          text={'Discipline'}
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
@@ -98,7 +99,7 @@ const About = () => {
          duration={'1000'}
         />
         <Cards width={'[25vw]'}
-           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+           icon={<VscWorkspaceTrusted className='text-green-500 text-[80px]' />}
          text={'Integrity'}
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
@@ -108,7 +109,7 @@ const About = () => {
 
         />
         <Cards width={'[25vw]'}
-           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+           icon={<FaMedal className='text-green-500 text-[80px]' />}
          text={'Excellence'}
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
@@ -117,7 +118,7 @@ const About = () => {
 
         />
         <Cards width={'[25vw]'}
-           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+           icon={<FaPeopleGroup className='text-green-500 text-[80px]' />}
          text={'Leadership'}
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
@@ -127,7 +128,7 @@ const About = () => {
 
         />
         <Cards width={'[25vw]'}
-           icon={<FaHandsHoldingChild className='text-green-500 text-[80px]' />}
+           icon={<FaNetworkWired className='text-green-500 text-[80px]' />}
          text={'Hard work'}
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
