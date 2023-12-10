@@ -49,7 +49,7 @@ const Footer = () => {
                     <Link href={'/about'} className='text-[#f1f1f1] text-md font-md hover:underline'>About Us</Link>
                     <Link href={'/gallary'} className='text-[#f1f1f1] text-md font-md hover:underline'>Gallary</Link>
                     <Link href={'/facilities'} className='text-[#f1f1f1] text-md font-md hover:underline'>Facilities</Link>
-                    <Link href={'/ourculture'} className='text-[#f1f1f1] text-md font-md hover:underline'>Our Culture</Link>
+                    <Link href={'/calender'} className='text-[#f1f1f1] text-md font-md hover:underline'>Calender</Link>
                     
                 </div>
             <div className='flex flex-col gap-3'>
