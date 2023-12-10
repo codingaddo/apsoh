@@ -61,6 +61,7 @@ const FacilitiesCards = () => {
                     <Image 
                     src={item.img}
                     alt={item.text}
+                    priority={true}
                     width={120}
 
                     />
