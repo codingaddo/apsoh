@@ -9,7 +9,7 @@ const Provider = (
     <>
     <ProgressBar
         color='#6BF178'
-        height='3px'
+        height='4px'
         shallowRouting
         options={
             {
