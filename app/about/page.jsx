@@ -140,6 +140,8 @@ const About = () => {
     </div>
 
     </div>
+        <h1 className='text-4xl font-bold text-green-600 text-center pb-5 '>Board of Directors</h1>
+
     <div data-aos='zoom-in'>
       <Directors/>
     </div>

@@ -51,14 +51,14 @@ const data=[
 
 const Directors = () => {
   return (
-    <div className='bg-gray-700 w-full py-14 p-7'>
+    <div className='bg-gray-500 w-full md:py-14 p-4 md:p-7 mb-7'>
     
-     <MyCarousel slidsToShow={3}>
+     <MyCarousel slidsToShow={3} isHover={true}>
          {
         data.map((item,index)=>{
           return(
               
-            <div key={index} className='slider p-3 md:px-10 flex flex-col bg-slate-50 '>
+            <div key={index} className='slider p-3 md:px-10 flex flex-col gap-3 bg-slate-50 h-[45vw]'>
               
               <div>
                  <Image
@@ -70,7 +70,7 @@ const Directors = () => {
               }}
               />
               </div>
-              <div>
+              <div className='text-xl font-medium text-green-700'>
                 {item.name}
               </div>
             </div>
