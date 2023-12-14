@@ -40,7 +40,6 @@ const Gallary = ({pics}) => {
               alt=''
               className='img'
               placeholder='blur'
-              // loading="lazy"
               priority={true}
             />
           </div>

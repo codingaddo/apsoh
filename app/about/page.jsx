@@ -25,17 +25,15 @@ const About = () => {
       
     <h1 className='uppercase text-xl font-bold text-slate-600 '>about us</h1>
     <div className='flex flex-col md:flex-row items-center md:items-stretch justify-center  md:justify-between gap-5 md:gap-16 pb-16'>
-      <div className='w-3/3 rounded-2xl pt-7 md:pt-14 ' data-aos='flip-right' data-aos-duration='1000' >
+      <div className='w-3/3 rounded-2xl pt-7 md:pt-14 ' data-aos='flip-right' data-aos-duration='500' >
         <h1 className='md:hidden text-4xl font-bold text-green-600 text-center pb-5 '>Welcome</h1>
 
         <Image
           src={director}
           alt='Director'
-          width={''}
-          height={''}
           priority={true}
           placeholder='blur'
-          className='rounded-2xl w-[550px] h-[400px] shadow-2xl'
+          className='rounded-2xl w-[450px] h-[400px] shadow-2xl'
         />
       </div>
       <div className='p-5 md:w-2/3 text-justify '>
