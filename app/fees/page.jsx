@@ -31,7 +31,7 @@ const page = () => {
             <FeesCard 
             url={'/fees.pdf'} 
             text={'Fees for Pre-School 2023/2024 Academic Year'}
-            animation={'fade-right'}
+            animation={'zoom-in'}
             duration={'2000'}
 
 
@@ -39,16 +39,16 @@ const page = () => {
             <FeesCard 
             url={'/fees.pdf'} 
             text={'Fees for Nursery 2023/2024 Academic Year'}
-             animation={'fade-left'}
-            duration={'2000'}
+             animation={'zoom-in'}
+            duration={'2500'}
 
 
             />
             <FeesCard
              url={'/fees.pdf'} 
              text={'Fees for Kindergarten 2023/2024 Academic Year'}
-         animation={'flip-right'}
-            duration={'2000'}
+         animation={'zoom-in'}
+            duration={'3000'}
 
 
              />
@@ -56,13 +56,13 @@ const page = () => {
              url={'/fees.pdf'}
               text={'Fees for Primary Pupil 2023/2024 Academic Year'}
               animation={'zoom-in'}
-         duration={'1000'}
+         duration={'3500'}
               />
             <FeesCard 
             url={'/fees.pdf'} 
             text={'JHS Students Fees 2023/2024 Academic Year'}
-             animation={'flip-left'}
-            duration={'2000'}
+             animation={'zoom-in'}
+            duration={'4000'}
             />
       </div>
 
