@@ -21,8 +21,8 @@ const page =()=>{
  
               <SchoolCards school={'Pre-School'} animate={'zoom-in'} time={'2000'}/>
               <SchoolCards school={'Nursery School'} animate={'flip-down'} time={'3000'}/>
-              <SchoolCards school={'Kindergarten'} animate={'flip-left'} time={'4000'}/>
-              <SchoolCards school={'Primary School'} animate={'fade-left'} time={'5000'}/>
+              <SchoolCards school={'Kindergarten'} animate={'zoom-in'} time={'4000'}/>
+              <SchoolCards school={'Primary School'} animate={'zoom-in'} time={'5000'}/>
               <SchoolCards school={'Junior High School'} animate={'flip-up'} time={'5500'}/>
               
           </div>
