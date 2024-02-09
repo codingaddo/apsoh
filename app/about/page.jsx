@@ -60,7 +60,7 @@ const About = () => {
         hstyle={'text-green-700 text-4xl font-bold'}
          pstyle={'leading-7 text-[1.07em]'}
          width={'[35vw]'}
-         animation={'fade-right'}
+         animation={'zoom-in'}
 
         />
      <Cards
@@ -70,7 +70,7 @@ const About = () => {
        hstyle={'text-green-700 text-4xl font-bold'}
        pstyle={'leading-7 text-[1.07em]'}
        width={'[35vw]'}
-       animation={'fade-left'}
+       animation={'zoom-in'}
 
        />
     </div>
@@ -84,7 +84,7 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
-         animation={'flip-right'}
+         animation={'zoom-in'}
 
          />
         <Cards width={'[25vw]'}
@@ -102,7 +102,7 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
-         animation={'flip-left'}
+         animation={'zoom-in'}
          duration={'2000'}
 
         />
@@ -112,7 +112,7 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
-         animation={'fade-right'}
+         animation={'zoom-in'}
 
         />
         <Cards width={'[25vw]'}
@@ -121,7 +121,7 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
-         animation={'fade-down'}
+         animation={'zoom-in'}
          duration={'1000'}
 
         />
@@ -131,7 +131,7 @@ const About = () => {
          para={'We believe that the knowledge skills and experiences of our students should also be used to benefit others in their community, country and beyond.'}
          pstyle={'leading-7 text-[1.07em]'}
          hstyle={'text-green-700 text-4xl font-bold'}
-          animation={'fade-left'}
+          animation={'zoom-in'}
          duration={'2000'}
         />
       </div>
