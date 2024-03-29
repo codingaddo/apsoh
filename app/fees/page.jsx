@@ -33,8 +33,6 @@ const page = () => {
             text={'Fees for Pre-School 2023/2024 Academic Year'}
             animation={'zoom-in'}
             duration={'2000'}
-
-
             />
             <FeesCard 
             url={'/fees.pdf'} 
@@ -64,6 +62,7 @@ const page = () => {
              animation={'zoom-in'}
             duration={'4000'}
             />
+
       </div>
 
 
